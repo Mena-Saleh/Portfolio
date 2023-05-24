@@ -27,3 +27,26 @@ function isInViewPort(element) //Helper function to determine whether an element
 
 }
 
+
+//Self typing text:
+
+const text = "- Hey There :) "
+var index = 1;
+const textElement = document.querySelector("#animated-title");
+
+function writeText(){
+    textElement.innerHTML = text.slice(0, index);
+    index++;
+
+    if(index > text.length)
+    {
+        index =1;
+    }
+
+    setTimeout(() => {
+        writeText();
+    }, 200);
+
+}
+
+writeText();
