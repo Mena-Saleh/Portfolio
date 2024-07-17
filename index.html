@@ -1,188 +1,409 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mena Saleh</title>
-    <link rel="icon" type="image/x-icon" href="Images/Icon.png">
-    <link rel="stylesheet" href="CSS/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!-- Body font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Heading font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>  <!-- animations -->
-  </head>
-  <body>
-    <header class="header">
-      <nav class = "nav">
-        <ul>
-          <img id="logo" src="Images/Logo3.png" alt="Logo">
-          <li><a href="#">HOME</a></li>
-          <li><a href="index.html#about">ABOUT</a></li>
-          <li><a href="index.html#portfolio">PORTFOLIO</a></li>
-          <li><a href="index.html#contact">CONTACT</a></li>
+    <link rel="icon" type="image/x-icon" href="Images/Logo.png" />
+    <link rel="stylesheet" href="CSS/main.css" />
 
-          <hr>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries and animations -->
+    <link rel="stylesheet" href="Lib/Splide/splide.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body id="particles-js">
+    <!-- Hero section -->
+    <header>
+      <!-- Hamburger menu for phones -->
+      <label>
+        <input type="checkbox" id="menuToggle" />
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#background">Background</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </label>
+      <nav>
+        <a href="#" id="logo-link"
+          ><img id="logo" src="Images/Logo.png" alt="Logo"
+        /></a>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#background">Background</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="intro-container">
-
         <div class="intro-text animate__animated animate__backInUp">
-          <h4 id = "animated-title">- Hey there :)</h2> 
-          <h1>I am <span>M</span><span>e</span><span>n</span><span>a</span> Saleh</h1>
-          <h3>Full Stack Web Developer</h3>
-          <p>I make simple, yet elegant designs, powered by the latest and greatest backend technologies.</p>
-
-          
+          <h4 id="animated-title">- Hey there :)</h4>
+          <h1>I am <span>Mena</span> Saleh</h1>
+          <h3>Software Engineer</h3>
+          <p>
+            I make simple, yet elegant designs, powered by the latest and
+            greatest backend technologies.
+          </p>
           <form method="get" action="Mena_Saleh_CV.pdf">
-            <button type="submit"><i class="fa fa-download" aria-hidden="true"></i>  CV</button>
-         </form>
-
+            <button type="submit">
+              <i class="fa fa-download" aria-hidden="true"></i> CV
+            </button>
+          </form>
         </div>
+        <div class="intro-items">
+          <div class="intro-icons">
+            <ul>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/mena-saleh-23b947167/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://github.com/Mena-Ibrahim"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/mena.ashraf.501/"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
 
-
-          <div class="intro-items">
-
-            <div class="intro-icons">
-              <ul>
-                <li><a target="_blank" href="https://www.linkedin.com/in/mena-saleh-23b947167/"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a target="_blank" href="https://github.com/Mena-Ibrahim"><i class="fa-brands fa-github"></i></a></li>
-                <li><a target="_blank" href="https://www.facebook.com/mena.ashraf.501/"><i class="fa-brands fa-facebook"></i></a></li>
-              </ul>
-             </div>
-
-            <img src="Images/Mena7.png" alt="Portrait">
-
-        
+          <img src="Images/Profile.png" alt="Portrait" />
         </div>
       </div>
-      
     </header>
 
-
+    <!-- About section -->
     <section class="about-container" id="about">
-        
-     
-          <h1>More about me</h1>
-          <p>I am a computer science student and a freelancer based in Cairo Egypt, I enjoy helping others and making creative websites. I like cooking, coding and drawing. <a href="mailto:Mena.a.saleh.2001@gmail.com"> Wanna say hi?.</a></p>
-          <h2>I am a <i class="fa-solid fa-hand-point-down"></i></h2>
+      <h1>More about me</h1>
+      <p>
+        I am a Computer Science graduate from Cairo, Egypt, I like solving
+        problems and stepping beyond my comfort zone. Besides coding, my
+        passions extend to culinary arts and drawing.
+        <a href="mailto:Mena.a.saleh.2001@gmail.com"> Wanna say hi?.</a>
+      </p>
+      <h2>I am a <i class="fa-solid fa-hand-point-down"></i></h2>
 
-        </div>
-
-      
-       <div class="about-content">
+      <div class="about-content">
         <div class="about-col">
-          <img src="Images/front.png" alt="front-end">
-          <h2>Frontend Developer</h2>
-          <p>I like to implement beautiful easy on the eye designs, I write my code from scratch.</p>
+          <img src="Images/WebDev.png" alt="front-end" />
+          <h2>Web Developer</h2>
+          <p>
+            I like to build robust web apps, seamlessly handling both frontend
+            and backend development.
+          </p>
           <h3>Languages I speak:</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>ReactJS</li>
-            <li>BootStrap</li>
-          </ul>
+          <div class="splide" id="splide-1" aria-labelledby="carousel-heading">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="Images/Tech Stack/HTML.png" alt="HTML" />
+                </li>
+                <li class="splide__slide">
+                  <img src="Images/Tech Stack/CSS.png" alt="CSS" />
+                </li>
+                <li class="splide__slide">
+                  <img src="Images/Tech Stack/JS.png" alt="JS" />
+                </li>
+                <li class="splide__slide">
+                  <img src="Images/Tech Stack/TS.png" alt="TS" />
+                </li>
+                <li class="splide__slide">
+                  <img src="Images/Tech Stack/Bootstrap.png" alt="Bootstrap" />
+                </li>
+                <li class="splide__slide">
+                  <img src="Images/Tech Stack/React.png" alt="React" />
+                </li>
+                <li class="splide__slide">
+                  <img src="Images/Tech Stack/nodeJS.png" alt="nodeJS" />
+                </li>
+                <li class="splide__slide">
+                  <img src="Images/Tech Stack/ASP.NET.png" alt="ASP.Net" />
+                </li>
+                <li class="splide__slide">
+                  <img src="Images/Tech Stack/django.png" alt="django" />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        
-        <div class="about-col">
-          <img src="Images/back.png" alt="front-end">
-          <h2>Backend Developer</h2>
-          <p>I make robust web applications with a secure and well built backend foundation.</p>
-          <h3>Technologies I use:</h3>
-          <ul>
-            <li>ASP.Net Core and C#</li>
-            <li>NodeJS and Typescript</li>
-            <li>SQL Server</li>
-            <li>SQL Developer</li>
-            <li>PostgreSQL</li>
-            <li>My SQL</li>
-          </ul>
-        </div>
-      
 
+        <div class="about-col">
+          <img src="Images/AI.png" alt="front-end" />
+          <h2>AI Engineer</h2>
+          <p>
+            I leverage my analytical skills and knowledge of data science to
+            deliver high-quality AI solutions.
+          </p>
+          <h3>Technologies I use:</h3>
+          <div class="splide" id="splide-2" aria-labelledby="carousel-heading">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="Images/Tech Stack/NumPy.png" alt="NumPy" />
+                </li>
+                <li class="splide__slide">
+                  <img src="Images/Tech Stack/Pandas.png" alt="Pandas" />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="Images/Tech Stack/scikit-learn.png"
+                    alt="scikit-learn"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img
+                    src="Images/Tech Stack/Tensorflow.png"
+                    alt="Tensorflow"
+                  />
+                </li>
+                <li class="splide__slide">
+                  <img src="Images/Tech Stack/NLTK.png" alt="NLTK" />
+                </li>
+                <li class="splide__slide">
+                  <img src="Images/Tech Stack/OpenCV.png" alt="OpenCV" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="work-container" id="portfolio">
+    <!-- Educational Background section -->
+    <section class="background-container" id="background">
+      <h1>Educational Background</h1>
+      <div class="background-text">
+        <p>
+          I have a strong Academic background in Computer Science, Graduating
+          from FCIS ASU in 2024, with a cumulative GPA of
+        </p>
+        <div class="circle-container">
+          <div class="progress-circle" id="progress-circle">
+            <div class="inner-circle">
+              <span id="gpa-text">0.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <h2>
+        I am also a certified developer
+        <i class="fa-solid fa-certificate"></i>
+      </h2>
+      <div
+        id="main-slider"
+        class="splide animated-block"
+        aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img
+                src="Images/Certificates/Supervised Machine Learning - Regression and Classification.jpg"
+                alt=""
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="Images/Certificates/Supervised Machine Learning - Advanced Learning Algorithms.jpg"
+                alt=""
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="Images/Certificates/Unsupervised Learning, Recommenders, Reinforcement Learning.jpg"
+                alt=""
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="Images/Certificates/Neural Networks and Deep Learning.jpg"
+                alt=""
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="Images/Certificates/Machine Learning Specialization.jpg"
+                alt=""
+              />
+            </li>
+            <li class="splide__slide">
+              <img src="Images/Certificates/DS 2022 Competition.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="Images/Certificates/EgFWD Professional Front-End Developer.jpg"
+                alt=""
+              />
+            </li>
+            <li class="splide__slide">
+              <img
+                src="Images/Certificates/EgFWD Advanced Full-Stack Web Developer.jpg"
+                alt=""
+              />
+            </li>
+            <li class="splide__slide">
+              <img src="Images/Certificates/MCSD1.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="Images/Certificates/MCSD2.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="Images/Certificates/MCSD3.jpg" alt="" />
+            </li>
+            <li class="splide__slide">
+              <img src="Images/Certificates/MCSD4.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section -->
+    <section class="work-container" id="portfolio">
       <div class="work-container-text">
         <h1>Check out my work!</h1>
         <p>Here is a porfolio with my most recent work, take a look <3</p>
       </div>
 
-      
-      <div class="work-entry">
-
+      <div class="work-entry animated-block">
         <div class="work-entry-text">
-
           <div class="work-entry-title">
             <h1>Mena's Italian</h1>
-            <h2>Restaurant web application design.</h2>
+            <h2>HTML, CSS, JS</h2>
           </div>
-        
+
           <div class="work-entry-desc">
-              <p>This website is inspired by my love of food and cooking, it showcases the vibrant colours of the Italian cuisine.</p>
-              <a target="_blank" href="https://mena-ibrahim.github.io/Mena-s-Italian/" class="link-site">Visit site <i class="fa-solid fa-arrow-right"></i></a>
-              <a target="_blank" href="https://github.com/Mena-Ibrahim/Mena-s-Italian-WebSite-Design" class="link-repo">Github Repo <i class="fa-brands fa-github-alt"></i></a>
-
+            <p>
+              The first website I ever created, inspired by my passion for
+              cooking. It showcases a simple yet modern design, leveraging
+              foundational front-end technologies.
+            </p>
+            <a
+              target="_blank"
+              href="https://mena-ibrahim.github.io/Mena-s-Italian/"
+              class="link-site"
+              >Visit site <i class="fa-solid fa-eye"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://github.com/Mena-Ibrahim/Mena-s-Italian-WebSite-Design"
+              class="link-repo"
+              >Github Repo <i class="fa-brands fa-github"></i
+            ></a>
           </div>
-
         </div>
 
         <div class="work-entry-img">
-
-            <img src="Images/Mena's Italian.png" alt="Mena's Italian">
+          <img src="Images/Portfolio/Mena's Italian.png" alt="Mena's Italian" />
         </div>
-
       </div>
-
-
-      <div class="work-entry">
-
-        <div class="work-entry-text">
-
-          <div class="work-entry-title">
-            <h1>Landing Page</h1>
-            <h2>Dynamic home page design</h2>
-          </div>
-        
-          <div class="work-entry-desc">
-              <p>This is a page that demonstrates the dynamic power of javascript in web design.</p>
-              <a target="_blank" href="https://mena-ibrahim.github.io/Responsive-Landing-Page/" class="link-site">Visit site <i class="fa-solid fa-arrow-right"></i></a>
-              <a target="_blank" href="https://github.com/Mena-Ibrahim/Responsive-Landing-Page" class="link-repo">Github Repo <i class="fa-brands fa-github-alt"></i></a>
-
-          </div>
-
-        </div>
-
-        <div class="work-entry-img">
-
-            <img src="Images/Landing Page.png" alt="Landing Page">
-        </div>
-
-      </div>
-
-
-
     </section>
 
-
-
-
+    <!-- Contact section -->
 
     <footer id="contact">
       <h2>Contact me</h2>
       <div class="footer-icons">
-        <ul>
-          <li><a target="_blank" href="tel:+201285005268"><i class="fa-solid fa-phone"></i>+201285005268</a></li>
-          <li><a target="_blank" href="mailto:Mena.a.saleh.2001@gmail.com"><i class="fa-solid fa-envelope"></i>Mena.A.Saleh.2001@gmail.com</a></li>
-          <li><a target="_blank" href="https://www.google.com/maps/place/30%C2%B008'46.1%22N+31%C2%B019'37.4%22E/@30.1456844,31.3270158,18.67z/data=!4m6!3m5!1s0x0:0xe28dfcfecbc0382!4b1!8m2!3d30.1461357!4d31.3270433?hl=en"><i class="fa-solid fa-house"></i></i>Address</a></li>
+        <ul class="line-hover-effect">
+          <li>
+            <a target="_blank" href="tel:+201285005268"
+              ><i class="fa-solid fa-phone"></i>+201285005268</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="mailto:Mena.a.saleh.2001@gmail.com"
+              ><i class="fa-solid fa-envelope"></i
+              >Mena.A.Saleh.2001@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/30%C2%B008'46.1%22N+31%C2%B019'37.4%22E/@30.1456844,31.3270158,18.67z/data=!4m6!3m5!1s0x0:0xe28dfcfecbc0382!4b1!8m2!3d30.1461357!4d31.3270433?hl=en"
+              ><i class="fa-solid fa-house"></i>Address</a
+            >
+          </li>
         </ul>
-       </div>
-        <p>Made with  <i class="fa-regular fa-heart"></i> by Mena</p>
+      </div>
+      <p>Made with <i class="fa-regular fa-heart"></i> by Mena</p>
     </footer>
+    <script src="JS/particles.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="Lib/Splide/splide-extension-auto-scroll.min.js"></script>
+    <script src="Lib/Splide/splide.min.js"></script>
+    <script>
+      // First slider
+      const splide1 = new Splide("#splide-1", {
+        arrows: false,
+        type: "loop",
+        drag: "free",
+        focus: "center",
+        perPage: 3,
+        autoScroll: {
+          speed: 0.5,
+        },
+      });
 
-      <script src="JS/script.js"></script>
+      splide1.mount(window.splide.Extensions);
+
+      // Second slider
+      const splide2 = new Splide("#splide-2", {
+        arrows: false,
+        type: "loop",
+        drag: "free",
+        focus: "center",
+        perPage: 3,
+        autoScroll: {
+          speed: 0.4,
+        },
+      });
+
+      splide2.mount(window.splide.Extensions);
+
+      // Certificates carousel
+      var main = new Splide("#main-slider", {
+        type: "slide",
+        width: "100vw",
+        arrows: true,
+        height: "auto",
+      });
+
+      main.mount();
+    </script>
   </body>
 </html>
