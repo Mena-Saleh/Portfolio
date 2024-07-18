@@ -597,7 +597,6 @@ nav img {
   padding: 1% 0;
   font-size: 16px;
   text-align: center;
-  margin: 0 auto;
 }
 
 .background-container h2 {
@@ -687,6 +686,7 @@ nav img {
     font-size: 14px;
     padding-bottom: 3%;
     width: 90%;
+    margin: 0 auto;
   }
 
   .background-container h2 {
@@ -949,5 +949,5 @@ footer p i {
 .animated-block {
   animation: appear linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  animation-range: entry 0% cover 20%;
 }
