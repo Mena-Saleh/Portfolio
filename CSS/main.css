@@ -460,10 +460,10 @@ nav img {
 .about-col {
   flex-basis: 46%;
   background-color: #fff;
-  border-radius: 50px;
+  border-radius: 35px;
   height: auto;
   display: flex;
-  box-shadow: 1px 1px 3px 1px #aaaaaa;
+  box-shadow: 1px 1px 8px 0.5px #3a4353;
   flex-direction: column;
   align-items: center;
 }
@@ -597,6 +597,7 @@ nav img {
   padding: 1% 0;
   font-size: 16px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .background-container h2 {
@@ -814,6 +815,7 @@ nav img {
 .work-entry-img {
   margin-top: 20px;
   flex-basis: 80%;
+  cursor: pointer;
 }
 .work-entry-img img {
   width: 100%;

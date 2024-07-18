@@ -31,7 +31,7 @@ function writeText() {
 }
 writeText();
 
-// Closing hamburger menu when clicking a link in it
+// Closing hamburger menu when clicking a link in it (on phones)
 document.querySelectorAll("header label a").forEach((link) => {
   link.addEventListener("click", function () {
     // Uncheck the hamburger menu checkbox
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const gpaText = document.getElementById("gpa-text");
 
   let currentPercentage = 0;
-  const duration = 2000; // Duration of the animation in milliseconds
+  const duration = 3500; // Duration of the animation in milliseconds
   const interval = 10; // Update interval in milliseconds
 
   const step = (percentage / duration) * interval;

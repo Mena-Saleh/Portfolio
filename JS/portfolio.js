@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
       imgSrc: "Images/Portfolio/Mena's Italian.png",
       imgAlt: "Mena's Italian",
     },
-    // Add more entries here as needed
   ];
 
   const template = (entry) => `
