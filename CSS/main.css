@@ -571,7 +571,7 @@ button.contact-btn:hover {
 /* Educational Background */
 
 .background-container {
-  margin: 200px 0;
+  margin: 100px 0;
   width: 100%;
 }
 
@@ -715,7 +715,7 @@ button.contact-btn:hover {
 .work-container {
   height: auto;
   width: 100%;
-  margin: 7% auto;
+  margin: 100px auto;
   text-align: center;
 }
 
@@ -882,7 +882,7 @@ button.contact-btn:hover {
 .contact-container {
   height: auto;
   width: 100%;
-  margin: 7% auto;
+  margin: 100px auto;
   text-align: center;
 }
 
@@ -892,6 +892,7 @@ button.contact-btn:hover {
   -webkit-text-fill-color: transparent;
   padding-top: 50px;
   font-size: 3.2rem;
+  padding: 0 30px;
 }
 
 .form-container {
@@ -963,7 +964,7 @@ textarea {
 
 @media (max-width: 800px) {
   .contact-container h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .form-row {
     flex-direction: column;
@@ -982,7 +983,7 @@ footer {
   text-align: center;
   height: auto;
   padding: 30px 0;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 footer img {
