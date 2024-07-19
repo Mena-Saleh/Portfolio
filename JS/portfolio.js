@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             }
                             <a target="_blank" href="${
                               entry.repoLink
-                            }" class="link-repo">Github Repo <i class="fa-brands fa-github"></i></a>
+                            }" class="link-repo">GitHub repo <i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             `;

@@ -68,7 +68,9 @@
             backend technologies, and I love what I do.
           </p>
           <div class="intro-buttons-container">
-            <button class="contact-btn">Contact Me</button>
+            <a href="index.html#contact"
+              ><button class="contact-btn">Contact Me</button></a
+            >
             <form method="get" action="Mena_Saleh_CV.pdf">
               <button type="submit">
                 Download CV <i class="fa-solid fa-arrow-right"></i>
@@ -302,9 +304,56 @@
       <div id="portfolio-grid"></div>
     </section>
 
-    <!-- Contact section -->
+    <!-- Contact Section -->
+    <section class="contact-container" id="contact">
+      <h1>
+        Got a project in mind?<br />
+        Tell me about it.
+      </h1>
+      <div class="form-container">
+        <form id="contact-form" class="form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="project">Type of project</label>
+              <select id="project" name="project" required>
+                <option value="">Select project type</option>
+                <option value="Web App">Web App</option>
+                <option value="AI Service">AI Service</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget">Budget</label>
+              <select id="budget" name="budget" required>
+                <option value="">Select budget</option>
+                <option value="$1000 - $5000">$1,000 - $5,000</option>
+                <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                <option value="10,000+">$10,000+</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="details">Additional details</label>
+            <textarea id="details" name="details" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- Footer section -->
 
-    <footer id="contact">
+    <footer>
       <img id="logo" src="Images/Logo.png" alt="Logo" />
       <p>Code is like humor. When you have to explain it, it’s bad.</p>
       <div class="footer-icons">
@@ -341,6 +390,7 @@
 
       <p>Made with <i class="fa-regular fa-heart"></i> by Mena</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="JS/particles.js"></script>
     <script src="JS/main.js"></script>
     <script src="Lib/Splide/splide-extension-auto-scroll.min.js"></script>
@@ -384,6 +434,48 @@
       });
 
       main.mount();
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "QGls0Jha4EXq-D09c",
+        });
+      })();
+    </script>
+    <script type="text/javascript">
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // These IDs from the previous steps
+          var serviceID = "service_ebru6ds";
+          var templateID = "template_2ir2vyd";
+
+          emailjs.sendForm(serviceID, templateID, this).then(
+            function () {
+              Swal.fire({
+                title: "Success!",
+                text: "Your message has been sent successfully.",
+                icon: "success",
+                confirmButtonText: "OK",
+              });
+            },
+            function (error) {
+              Swal.fire({
+                title: "Error!",
+                text: "Failed to send your message. Please try again later.",
+                icon: "error",
+                confirmButtonText: "OK",
+              });
+            }
+          );
+        });
     </script>
   </body>
 </html>
