@@ -81,10 +81,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="work-entry animated-block">
                     <div class="work-entry-top">
                         <div class="work-entry-title">
-                            <h1>${entry.title}</h1>
-                            <h2>${entry.tags
+                            <h2>${entry.title}</h2>
+                            <h3>${entry.tags
                               .map((tag) => `<span>${tag}</span>`)
-                              .join(" ")}</h2>
+                              .join(" ")}</h3>
                         </div>
                         <div class="work-entry-img">
                           <img src="${entry.imgSrc}" alt="${entry.imgAlt}" />

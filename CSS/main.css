@@ -720,7 +720,7 @@ button.contact-btn:hover {
 }
 
 .work-container h1 {
-  background: linear-gradient(90deg, #cf78e0 0%, #1c469c 100%);
+  background: linear-gradient(150deg, #cf78e0 0%, #1c469c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding-top: 50px;
@@ -765,11 +765,13 @@ button.contact-btn:hover {
   align-self: flex-start;
 }
 
-.work-entry-title h1 {
+.work-entry-title h2 {
   font-size: 2rem;
+  color: #1c469c;
+  background-color: none;
 }
 
-.work-entry-title h2 {
+.work-entry-title h3 {
   color: #fff;
   font-size: 0.7rem;
   margin-top: 20px;
@@ -852,7 +854,7 @@ button.contact-btn:hover {
     font-size: 1rem;
   }
 
-  .work-entry-title h2 {
+  .work-entry-title h3 {
     font-size: 0.6rem;
   }
 
