@@ -12,25 +12,6 @@ function selfMinimizeNav() {
   }
 }
 
-// Self typing text:
-const text = "- Hey There :) ";
-var index = 1;
-const textElement = document.querySelector("#animated-title");
-
-function writeText() {
-  textElement.innerHTML = text.slice(0, index);
-  index++;
-
-  if (index > text.length) {
-    index = 1;
-  }
-
-  setTimeout(() => {
-    writeText();
-  }, 200);
-}
-writeText();
-
 // Closing hamburger menu when clicking a link in it (on phones)
 document.querySelectorAll("header label a").forEach((link) => {
   link.addEventListener("click", function () {
@@ -59,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
       currentPercentage = percentage;
       clearInterval(progressInterval);
     }
-    progressCircle.style.background = `conic-gradient(rgba(124, 160, 233, 1) 0%, rgba(33,88,196, 1) ${currentPercentage}%, #eee ${currentPercentage}% 100%)`;
+    progressCircle.style.background = `conic-gradient(#cf78e0 0%, #1c469c ${currentPercentage}%, #eee ${currentPercentage}% 100%)`;
     gpaText.innerText = ((currentPercentage / 100) * maxGPA).toFixed(2);
   };
 

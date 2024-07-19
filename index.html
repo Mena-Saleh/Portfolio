@@ -9,16 +9,12 @@
 
     <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inconsolata:wght@200..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
 
@@ -66,18 +62,19 @@
         <div
           class="intro-text animate__animated animate__zoomIn animate__faster"
         >
-          <h4 id="animated-title">- Hey there :)</h4>
-          <h1>I am <span>Mena</span> Saleh</h1>
-          <h3>Software Engineer</h3>
+          <h1>Full Stack Developer <br />& AI Engineer</h1>
           <p>
-            I make simple, yet elegant designs, powered by the latest and
-            greatest backend technologies.
+            I create simple, elegant designs powered by cutting-edge AI and
+            backend technologies, and I love what I do.
           </p>
-          <form method="get" action="Mena_Saleh_CV.pdf">
-            <button type="submit">
-              <i class="fa fa-download" aria-hidden="true"></i> CV
-            </button>
-          </form>
+          <div class="intro-buttons-container">
+            <button class="contact-btn">Contact Me</button>
+            <form method="get" action="Mena_Saleh_CV.pdf">
+              <button type="submit">
+                Download CV <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
         </div>
         <div class="intro-items">
           <div class="intro-icons">
@@ -103,7 +100,6 @@
               </li>
             </ul>
           </div>
-
           <img src="Images/Profile.png" alt="Portrait" />
         </div>
       </div>
@@ -111,22 +107,23 @@
 
     <!-- About section -->
     <section class="about-container" id="about">
-      <h1>About me</h1>
+      <h1>Hi, I'm Mena. Nice to meet you.</h1>
       <p>
         I am a Computer Science graduate from Cairo, Egypt, I like solving
         problems and stepping beyond my comfort zone. Besides coding, my
-        passions extend to culinary arts and drawing.
-        <a href="mailto:Mena.a.saleh.2001@gmail.com"> Wanna say hi?.</a>
+        passions extend to culinary arts and drawing. Wanna to get to know me
+        more?
+        <a href="mailto:Mena.a.saleh.2001@gmail.com"> Email me.</a>
       </p>
-      <h2>I am a <i class="fa-solid fa-hand-point-down"></i></h2>
+      <h2>Services I provide <i class="fa-solid fa-hand-point-down"></i></h2>
 
       <div class="about-content">
         <div class="about-col animated-block-2">
-          <img src="Images/WebDev.png" alt="front-end" />
-          <h2>Web Developer</h2>
+          <img src="Images/WebDev.png" alt="WebDev" />
+          <h2>Web Developement</h2>
           <p>
-            I like to build robust web apps, seamlessly handling both frontend
-            and backend development.
+            I build robust web apps, seamlessly handling both frontend and
+            backend development.
           </p>
           <h3>Languages I speak:</h3>
           <div class="splide" id="splide-1" aria-labelledby="carousel-heading">
@@ -165,8 +162,8 @@
         </div>
 
         <div class="about-col animated-block-3">
-          <img src="Images/AI.png" alt="front-end" />
-          <h2>AI Engineer</h2>
+          <img src="Images/AI.png" alt="AI" />
+          <h2>AI Engineering</h2>
           <p>
             I leverage my analytical skills and knowledge of data science to
             deliver high-quality AI solutions.
@@ -303,34 +300,46 @@
         <h1>Check out my work!</h1>
         <p>Here is a porfolio with my most recent work, take a look <3</p>
       </div>
+      <div id="portfolio-grid"></div>
     </section>
 
     <!-- Contact section -->
 
     <footer id="contact">
-      <h2>Contact me</h2>
+      <img id="logo" src="Images/Logo.png" alt="Logo" />
+      <p>Code is like humor. When you have to explain it, it’s bad.</p>
       <div class="footer-icons">
         <ul class="line-hover-effect">
           <li>
             <a target="_blank" href="tel:+201285005268"
-              ><i class="fa-solid fa-phone"></i>+201285005268</a
-            >
+              ><i class="fa-solid fa-phone"></i
+            ></a>
           </li>
           <li>
             <a target="_blank" href="mailto:Mena.a.saleh.2001@gmail.com"
               ><i class="fa-solid fa-envelope"></i
-              >Mena.A.Saleh.2001@gmail.com</a
-            >
+            ></a>
           </li>
           <li>
             <a
               target="_blank"
-              href="https://www.google.com/maps/place/30%C2%B008'46.1%22N+31%C2%B019'37.4%22E/@30.1456844,31.3270158,18.67z/data=!4m6!3m5!1s0x0:0xe28dfcfecbc0382!4b1!8m2!3d30.1461357!4d31.3270433?hl=en"
-              ><i class="fa-solid fa-house"></i>Address</a
-            >
+              href="https://www.linkedin.com/in/mena-saleh-23b947167/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/Mena-Ibrahim"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.facebook.com/mena.ashraf.501/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
           </li>
         </ul>
       </div>
+
       <p>Made with <i class="fa-regular fa-heart"></i> by Mena</p>
     </footer>
     <script src="JS/particles.js"></script>

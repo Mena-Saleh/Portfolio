@@ -23,6 +23,26 @@ document.addEventListener("DOMContentLoaded", () => {
       imgAlt: "ProjeX",
     },
     {
+      title: "Deception Detection System",
+      tags: [
+        "Deep Learning",
+        "Machine Learning",
+        "Computer Vision",
+        "NLP",
+        "Data Fusion",
+        "Django",
+        "React",
+      ],
+      description:
+        "My graduation project, it is an AI-based system that analyzes and detects deceptive patterns in videos by leveraging vocal, visual, and textual cues.",
+      siteLink: "",
+      repoLink:
+        "https://github.com/Mena-Ibrahim/Multimodal-Deception-Detection-System",
+      hasSiteLink: false,
+      imgSrc: "Images/Portfolio/Deception Detection System.png",
+      imgAlt: "Deception Detection System",
+    },
+    {
       title: "3D Animal Runner Game",
       tags: ["Unity", "C#"],
       description:
@@ -59,14 +79,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const template = (entry) => `
                 <div class="work-entry animated-block">
-                    <div class="work-entry-text">
+                    <div class="work-entry-top">
                         <div class="work-entry-title">
                             <h1>${entry.title}</h1>
                             <h2>${entry.tags
                               .map((tag) => `<span>${tag}</span>`)
                               .join(" ")}</h2>
                         </div>
-                        <div class="work-entry-desc">
+                        <div class="work-entry-img">
+                          <img src="${entry.imgSrc}" alt="${entry.imgAlt}" />
+                        </div>
+                    </div>
+                    
+                    <div class="work-entry-desc">
                             <p>${entry.description}</p>
                             ${
                               entry.hasSiteLink
@@ -76,15 +101,11 @@ document.addEventListener("DOMContentLoaded", () => {
                             <a target="_blank" href="${
                               entry.repoLink
                             }" class="link-repo">Github Repo <i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="work-entry-img">
-                        <img src="${entry.imgSrc}" alt="${entry.imgAlt}" />
                     </div>
                 </div>
             `;
 
-  const portfolioSection = document.getElementById("portfolio");
+  const portfolioSection = document.getElementById("portfolio-grid");
   entries.forEach((entry) => {
     const div = document.createElement("div");
     div.innerHTML = template(entry);
