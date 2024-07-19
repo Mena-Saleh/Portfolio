@@ -13,7 +13,7 @@ resizeCanvas();
 
 // Particle settings
 const particles = [];
-const numParticles = 12;
+const numParticles = 0;
 const maxInitialVelocity = 0.5;
 const particleSize = 100;
 const particleColors = [
