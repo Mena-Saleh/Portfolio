@@ -849,8 +849,7 @@ button.contact-btn:hover {
     font-size: 1.6rem;
   }
   .work-container p {
-    font-size: 0.9rem;
-    line-height: 1.3rem;
+    font-size: 1rem;
   }
 
   .work-entry-title h2 {
@@ -863,6 +862,7 @@ button.contact-btn:hover {
 
   .work-entry-desc p {
     font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .work-entry-desc a {
