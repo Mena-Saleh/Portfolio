@@ -867,6 +867,7 @@ button.contact-btn:hover {
 
   .work-entry-desc a {
     font-size: 1rem;
+    color:#1c469c
   }
   #portfolio-grid {
     grid-template-columns: 1fr;
