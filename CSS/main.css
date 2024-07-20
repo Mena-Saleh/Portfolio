@@ -934,10 +934,11 @@ input,
 select,
 textarea {
   padding: 10px;
-  border: 2px solid #bbb;
+  border: 2px solid #888;
   color: #525267;
   border-radius: 4px;
   font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 textarea {
