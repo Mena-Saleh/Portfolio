@@ -23,16 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
       imgAlt: "ProjeX",
     },
     {
-      title: "Deception Detection System",
-      tags: [
-        "Deep Learning",
-        "Machine Learning",
-        "Computer Vision",
-        "NLP",
-        "Data Fusion",
-        "Django",
-        "React",
-      ],
+      title: "Deception Detection",
+      tags: ["AI", "Data Fusion", "Django", "React"],
       description:
         "My graduation project, it is an AI-based system that analyzes and detects deceptive patterns in videos by leveraging vocal, visual, and textual cues.",
       siteLink: "",
@@ -43,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       imgAlt: "Deception Detection System",
     },
     {
-      title: "3D Animal Runner Game",
+      title: "3D Animal Runner",
       tags: ["Unity", "C#"],
       description:
         "A 3D endless runner game built with Unity, featuring monster attacks, randomly spawning obstacles, coin collection, and a high score system.",
