@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "TraveLog",
       tags: [".NET Core", "MVC", "Identity"],
       description:
-        "A website designed for travelers, allowing them to discover global attractions, log their journeys, and visualize their travels on an interactive world map.",
+        "A website tailored for travelers, it allows them to discover global attractions, log their journeys, and visualize their travels on an interactive world map",
       siteLink: "",
       repoLink: "https://github.com/Mena-Ibrahim/TraveLog",
       hasSiteLink: false,
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Mena's Italian",
       tags: ["HTML", "CSS", "JS"],
       description:
-        "The first website I ever created, inspired by my passion for cooking. It showcases a simple yet modern design, leveraging foundational front-end technologies.",
+        "The first website I ever created, inspired by my passion for cooking. It showcases a simple modern design using basic front-end technologies.",
       siteLink: "https://mena-ibrahim.github.io/Mena-s-Italian/",
       repoLink: "https://github.com/Mena-Ibrahim/Mena-s-Italian-WebSite-Design",
       hasSiteLink: true,
