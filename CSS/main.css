@@ -908,7 +908,7 @@ button.contact-btn:hover {
 .form {
   padding: 20px;
   border-radius: 8px;
-  width: 100%;
+  width: 85%;
   max-width: 600px;
 }
 
@@ -934,7 +934,7 @@ input,
 select,
 textarea {
   padding: 10px;
-  border: 2px solid #888;
+  border: 1px solid #777;
   color: #525267;
   border-radius: 4px;
   font-size: 1rem;
