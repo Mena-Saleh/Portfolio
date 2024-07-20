@@ -149,6 +149,10 @@ header label ul {
   list-style: none;
 }
 
+header label input:checked ~ ul {
+  display: block;
+}
+
 header label a {
   margin-bottom: 1em;
   display: block;
@@ -247,9 +251,7 @@ nav img {
   header label {
     display: block;
   }
-  header label ul {
-    display: block;
-  }
+
   nav ul {
     display: none;
   }
