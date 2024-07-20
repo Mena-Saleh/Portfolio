@@ -53,8 +53,8 @@ header {
 
 header label {
   display: none;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 header label .menu {
   position: fixed;
@@ -760,6 +760,7 @@ button.contact-btn:hover {
 
 .work-entry-title {
   flex-basis: 40%;
+  text-align: left;
 }
 
 .work-entry-img {
@@ -773,7 +774,7 @@ button.contact-btn:hover {
 }
 
 .work-entry-title h2 {
-  font-size: 2.4rem;
+  font-size: 2.3rem;
   color: #1c469c;
   background-color: none;
 }
@@ -847,6 +848,13 @@ button.contact-btn:hover {
     font-size: 1rem;
   }
 
+  .work-entry-title {
+    text-align: center;
+    padding: 20px 5px 0;
+  }
+  .work-entry-title h2 {
+    font-size: 1.7rem;
+  }
   .work-entry-title h3 {
     font-size: 0.6rem;
   }
