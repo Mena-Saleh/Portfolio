@@ -393,6 +393,7 @@ button.contact-btn:hover {
 .about-container {
   margin-top: 14%;
   height: auto;
+  padding: 25px;
   background: linear-gradient(
     180deg,
     #0c1f46 0%,
@@ -404,8 +405,7 @@ button.contact-btn:hover {
 .about-container h1 {
   color: #fff;
   text-align: center;
-  padding-top: 3%;
-  padding-bottom: 2%;
+  margin: 30px 0 20px;
   font-size: 2rem;
 }
 
