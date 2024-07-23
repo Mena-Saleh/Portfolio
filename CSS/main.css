@@ -240,12 +240,6 @@ nav img {
 /* Responsiveness for mobile */
 
 @media only screen and (max-width: 1200px) {
-  /* nav #logo-link {
-    width: 38%;
-  }
-  .nav-active #logo-link {
-    width: 32%;
-  } */
   .nav-active {
     height: 22px;
   }
@@ -270,7 +264,7 @@ nav img {
   align-items: flex-end;
   width: 80%;
   margin: auto;
-  padding-top: 10%;
+  padding-top: 12%;
   border-bottom: 2px double #0c1f46;
 }
 
@@ -479,7 +473,7 @@ button.contact-btn:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.8rem;
-  padding: 5% 0 5%;
+  padding: 5% 3% 5%;
 }
 
 .about-col p {
@@ -532,6 +526,8 @@ button.contact-btn:hover {
   .about-content {
     flex-direction: column;
     justify-content: space-between;
+    width: 90%;
+    margin: 3% auto 0;
   }
   .about-col {
     padding: 10px 0;
