@@ -1,9 +1,9 @@
 # This is my portfolio page
 
-<div align="center">
+<p align="center">
     <img src="Screenshots/1.png" alt="Portfolio Screenshot">
-</div>
+</p>
 
-<div align="center">
-    [visit site](https://mena-saleh.github.io/Portfolio/)
-</div>
+<p align="center">
+    <a href="https://mena-saleh.github.io/Portfolio/" style="font-size: 20px; color: #1c469c; text-decoration: none;">visit site</a>
+</p>
