@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "A website tailored for travelers, it allows them to discover global attractions, log their journeys, and visualize their travels on an interactive world map",
       siteLink: "",
-      repoLink: "https://github.com/Mena-Ibrahim/TraveLog",
+      repoLink: "https://github.com/Mena-saleh/TraveLog",
       hasSiteLink: false,
       imgSrc: "Images/Portfolio/TraveLog.png",
       imgAlt: "TraveLog",
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "A straightforward project management system that enables users to connect together and collaborate by visualizing tasks on boards.",
       siteLink: "",
-      repoLink: "https://github.com/Mena-Ibrahim/ProjeX-Web-App",
+      repoLink: "https://github.com/Mena-saleh/ProjeX-Web-App",
       hasSiteLink: false,
       imgSrc: "Images/Portfolio/ProjeX.png",
       imgAlt: "ProjeX",
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "My graduation project, it is an AI-based system that analyzes and detects deceptive patterns in videos by leveraging vocal, visual, and textual cues.",
       siteLink: "",
       repoLink:
-        "https://github.com/Mena-Ibrahim/Multimodal-Deception-Detection-System",
+        "https://github.com/Mena-saleh/Multimodal-Deception-Detection-System",
       hasSiteLink: false,
       imgSrc: "Images/Portfolio/Deception Detection System.png",
       imgAlt: "Deception Detection System",
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
       description:
         "A 3D endless runner game built with Unity, featuring monster attacks, randomly spawning obstacles, coin collection, and a high score system.",
       siteLink: "",
-      repoLink: "https://github.com/Mena-Ibrahim/Animal-Runner-Game",
+      repoLink: "https://github.com/Mena-saleh/Animal-Runner-Game",
       hasSiteLink: false,
       imgSrc: "Images/Portfolio/Animal Runner.png",
       imgAlt: "Animal Runner",
@@ -50,8 +50,8 @@ document.addEventListener("DOMContentLoaded", () => {
       tags: ["HTML", "CSS", "JS"],
       description:
         "A photo gallery app featuring photos from Unsplash API, additionally, photos can be uploaded to local storage and custom validation is applied.",
-      siteLink: "https://mena-ibrahim.github.io/Photo-Gallery/",
-      repoLink: "https://github.com/Mena-Ibrahim/Photo-Gallery",
+      siteLink: "https://mena-saleh.github.io/Photo-Gallery/",
+      repoLink: "https://github.com/Mena-saleh/Photo-Gallery",
       hasSiteLink: true,
       imgSrc: "Images/Portfolio/Photo Gallery.png",
       imgAlt: "Photo Gallery",
@@ -61,8 +61,8 @@ document.addEventListener("DOMContentLoaded", () => {
       tags: ["HTML", "CSS", "JS"],
       description:
         "The first website I ever created, inspired by my passion for cooking. It showcases a simple modern design using basic front-end technologies.",
-      siteLink: "https://mena-ibrahim.github.io/Mena-s-Italian/",
-      repoLink: "https://github.com/Mena-Ibrahim/Mena-s-Italian-WebSite-Design",
+      siteLink: "https://mena-saleh.github.io/Mena-s-Italian/",
+      repoLink: "https://github.com/Mena-Saleh/Mena-s-Italian",
       hasSiteLink: true,
       imgSrc: "Images/Portfolio/Mena's Italian.png",
       imgAlt: "Mena's Italian",
