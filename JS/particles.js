@@ -32,7 +32,7 @@ const particleColors = [
   "rgba(12, 31, 70, 0.03)",
 ];
 
-const maxSpeed = 0.7; // threshold speed for applying friction
+const maxSpeed = 0.6; // threshold speed for applying friction
 const friction = 0.99; // friction factor
 
 class Particle {
@@ -97,24 +97,26 @@ function draw() {
 
 draw();
 
-// Mouse interaction
-document.addEventListener("mousemove", function (event) {
-  const mouseX = event.clientX;
-  const mouseY = event.clientY;
+// Mouse interaction on PC
+if (window.innerWidth > 800) {
+  document.addEventListener("mousemove", function (event) {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
 
-  particles.forEach((particle) => {
-    const dx = particle.x - mouseX;
-    const dy = particle.y - mouseY;
-    const distance = Math.sqrt(dx * dx + dy * dy);
-    const maxDistance = 50;
-    const forceDirectionX = dx / distance;
-    const forceDirectionY = dy / distance;
-    const maxForce = 0.1;
-    const force = (maxDistance - distance) / maxDistance;
+    particles.forEach((particle) => {
+      const dx = particle.x - mouseX;
+      const dy = particle.y - mouseY;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      const maxDistance = 70;
+      const forceDirectionX = dx / distance;
+      const forceDirectionY = dy / distance;
+      const maxForce = 0.8;
+      const force = (maxDistance - distance) / maxDistance;
 
-    if (distance < maxDistance) {
-      particle.vx += forceDirectionX * force * maxForce;
-      particle.vy += forceDirectionY * force * maxForce;
-    }
+      if (distance < maxDistance) {
+        particle.vx += forceDirectionX * force * maxForce;
+        particle.vy += forceDirectionY * force * maxForce;
+      }
+    });
   });
-});
+}

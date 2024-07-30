@@ -69,8 +69,10 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
-  const template = (entry) => `
-                <div class="work-entry animated-block">
+  const template = (entry, index) => `
+                <div class="work-entry ${
+                  index % 2 == 0 ? "animated-block-2" : "animated-block-3"
+                }">
                     <div class="work-entry-top">
                         <div class="work-entry-title">
                             <h2>${entry.title}</h2>
@@ -98,9 +100,9 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
 
   const portfolioSection = document.getElementById("portfolio-grid");
-  entries.forEach((entry) => {
+  entries.forEach((entry, index) => {
     const div = document.createElement("div");
-    div.innerHTML = template(entry);
+    div.innerHTML = template(entry, index);
     portfolioSection.appendChild(div);
   });
 });
