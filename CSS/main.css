@@ -735,6 +735,20 @@ button.contact-btn:hover {
   font-size: 1.2rem;
 }
 
+.filter-select-container {
+  color: #525267;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-select-container select {
+  margin: 0 10px;
+  height: 35px;
+  padding: 0px 5px;
+}
+
 .work-entry {
   width: 90%;
   text-align: left;
@@ -850,6 +864,17 @@ button.contact-btn:hover {
   }
   .work-container p {
     font-size: 1rem;
+  }
+  .filter-select-container {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+
+  .filter-select-container select {
+    margin: 0 10px;
+    height: 25px;
+    padding: 0px 3px;
+    font-size: 0.9rem;
   }
 
   .work-entry-title {

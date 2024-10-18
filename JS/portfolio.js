@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       hasSiteLink: false,
       imgSrc: "Images/Portfolio/TraveLog.png",
       imgAlt: "TraveLog",
+      type: "Web",
     },
     {
       title: "ProjeX",
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
       hasSiteLink: false,
       imgSrc: "Images/Portfolio/ProjeX.png",
       imgAlt: "ProjeX",
+      type: "Web",
     },
     {
       title: "Deception Detection",
@@ -33,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       hasSiteLink: false,
       imgSrc: "Images/Portfolio/Deception Detection System.png",
       imgAlt: "Deception Detection System",
+      type: "AI",
     },
     {
       title: "3D Animal Runner",
@@ -44,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       hasSiteLink: false,
       imgSrc: "Images/Portfolio/Animal Runner.png",
       imgAlt: "Animal Runner",
+      type: "Game",
     },
     {
       title: "Photo Gallery",
@@ -55,6 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
       hasSiteLink: true,
       imgSrc: "Images/Portfolio/Photo Gallery.png",
       imgAlt: "Photo Gallery",
+      type: "Web",
     },
     {
       title: "Mena's Italian",
@@ -66,43 +71,62 @@ document.addEventListener("DOMContentLoaded", () => {
       hasSiteLink: true,
       imgSrc: "Images/Portfolio/Mena's Italian.png",
       imgAlt: "Mena's Italian",
+      type: "Web",
     },
   ];
 
   const template = (entry, index) => `
-                <div class="work-entry ${
-                  index % 2 == 0 ? "animated-block-2" : "animated-block-3"
-                }">
-                    <div class="work-entry-top">
-                        <div class="work-entry-title">
-                            <h2>${entry.title}</h2>
-                            <h3>${entry.tags
-                              .map((tag) => `<span>${tag}</span>`)
-                              .join(" ")}</h3>
-                        </div>
-                        <div class="work-entry-img">
-                          <img src="${entry.imgSrc}" alt="${entry.imgAlt}" />
-                        </div>
-                    </div>
-                    
-                    <div class="work-entry-desc">
-                            <p>${entry.description}</p>
-                            ${
-                              entry.hasSiteLink
-                                ? `<a target="_blank" href="${entry.siteLink}" class="link-site">Visit site <i class="fa-solid fa-eye"></i></a>`
-                                : ""
-                            }
-                            <a target="_blank" href="${
-                              entry.repoLink
-                            }" class="link-repo">GitHub repo <i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-            `;
+    <div class="work-entry ${
+      index % 2 == 0 ? "animated-block-2" : "animated-block-3"
+    }" data-type="${entry.type}">
+      <div class="work-entry-top">
+        <div class="work-entry-title">
+          <h2>${entry.title}</h2>
+          <h3>${entry.tags.map((tag) => `<span>${tag}</span>`).join(" ")}</h3>
+        </div>
+        <div class="work-entry-img">
+          <img src="${entry.imgSrc}" alt="${entry.imgAlt}" />
+        </div>
+      </div>
+      <div class="work-entry-desc">
+        <p>${entry.description}</p>
+        ${
+          entry.hasSiteLink
+            ? `<a target="_blank" href="${entry.siteLink}" class="link-site">Visit site <i class="fa-solid fa-eye"></i></a>`
+            : ""
+        }
+        <a target="_blank" href="${
+          entry.repoLink
+        }" class="link-repo">GitHub repo <i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  `;
 
   const portfolioSection = document.getElementById("portfolio-grid");
-  entries.forEach((entry, index) => {
-    const div = document.createElement("div");
-    div.innerHTML = template(entry, index);
-    portfolioSection.appendChild(div);
+
+  // Render all entries
+  const renderEntries = () => {
+    portfolioSection.innerHTML = ""; // Clear previous entries
+    entries.forEach((entry, index) => {
+      portfolioSection.innerHTML += template(entry, index); // Directly append the innerHTML
+    });
+  };
+
+  renderEntries(); // Initial rendering
+
+  // Filtering functionality
+  const filterSelect = document.getElementById("project-type-filter");
+  filterSelect.addEventListener("change", (event) => {
+    const selectedType = event.target.value;
+    const workEntries = document.querySelectorAll(".work-entry");
+
+    workEntries.forEach((entry) => {
+      const entryType = entry.getAttribute("data-type");
+      if (selectedType === "All" || entryType === selectedType) {
+        entry.style.display = "flex"; // Display if matching the filter
+      } else {
+        entry.style.display = "none"; // Hide if not matching
+      }
+    });
   });
 });
