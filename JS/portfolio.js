@@ -38,6 +38,30 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "AI",
     },
     {
+      title: "Questions Tagging System",
+      tags: ["AI", "NLP", "Transformers"],
+      description:
+        "An automatic question tagging system leveraging NLP pipelines and multi-label classification techniques on a 10% sample of Stack Overflow questions",
+      siteLink: "",
+      repoLink: "https://github.com/Mena-saleh/Questions-Tagging-System",
+      hasSiteLink: false,
+      imgSrc: "Images/Portfolio/Questions Tagging System.png",
+      imgAlt: "Questions Tagging System",
+      type: "AI",
+    },
+    {
+      title: "Orders Forecasting",
+      tags: ["AI", "Time Series Analysis", "Regression"],
+      description:
+        "Applied time series analysis and regression modeling to forecast order volumes at Rohlik Group’s selected warehouses, accurately predicting demand for the next 60 days using real-world data.",
+      siteLink: "",
+      repoLink: "https://github.com/Mena-saleh/Time-Series-Forecasting",
+      hasSiteLink: false,
+      imgSrc: "Images/Portfolio/Orders Forecasting.png",
+      imgAlt: "Orders Forecasting",
+      type: "AI",
+    },
+    {
       title: "3D Animal Runner",
       tags: ["Unity", "C#"],
       description:
