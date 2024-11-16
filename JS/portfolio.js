@@ -1,6 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const entries = [
     {
+      title: "TreeVis",
+      tags: ["Vanilla JavaScript", "Algorithms", "Visualization"],
+      description:
+        "A dynamic and interactive tool built entirely with vanilla JavaScript. It allows users to visually explore the execution of recursive code as a beautifully structured recursion tree.",
+      siteLink: "https://mena-saleh.github.io/TreeVis/",
+      repoLink: "https://github.com/Mena-saleh/TreeVis",
+      hasSiteLink: true,
+      imgSrc: "Images/Portfolio/TreeVis.png",
+      imgAlt: "TreeVis",
+      type: "Web",
+    },
+    {
       title: "TraveLog",
       tags: [".NET Core", "MVC", "Identity"],
       description:
