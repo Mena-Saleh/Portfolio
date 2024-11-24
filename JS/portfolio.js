@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const entries = [
     {
       title: "TreeVis",
-      tags: ["Vanilla JavaScript", "Algorithms", "Visualization"],
+      tags: ["JavaScript", "Algorithms", "Visualization"],
       description:
         "A dynamic and interactive tool built entirely with vanilla JavaScript. It allows users to visually explore the execution of recursive code as a beautifully structured recursion tree.",
       siteLink: "https://mena-saleh.github.io/TreeVis/",
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Photo Gallery",
-      tags: ["HTML", "CSS", "JS"],
+      tags: ["HTML", "CSS", "JavaScript"],
       description:
         "A photo gallery app featuring photos from Unsplash API, additionally, photos can be uploaded to local storage and custom validation is applied.",
       siteLink: "https://mena-saleh.github.io/Photo-Gallery/",
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Mena's Italian",
-      tags: ["HTML", "CSS", "JS"],
+      tags: ["HTML", "CSS", "JavaScript"],
       description:
         "The first website I ever created, inspired by my passion for cooking. It showcases a simple modern design using basic front-end technologies.",
       siteLink: "https://mena-saleh.github.io/Mena-s-Italian/",
