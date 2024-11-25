@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const gpaText = document.getElementById("gpa-text");
 
   let currentPercentage = 0;
-  const duration = 3500; // Duration of the animation in milliseconds
-  const interval = 10; // Update interval in milliseconds
+  const duration = 2000; // Duration of the animation in milliseconds
+  const interval = 6; // Update interval in milliseconds
 
   const step = (percentage / duration) * interval;
 
