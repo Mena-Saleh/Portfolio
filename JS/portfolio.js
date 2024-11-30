@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "TraveLog",
       tags: [".NET Core", "MVC", "Identity"],
       description:
-        "A website tailored for travelers, it allows them to discover global attractions, log their journeys, and visualize their travels on an interactive world map",
+        "A website tailored for travelers, it allows them to discover global attractions, log their journeys, and visualize their travels on an interactive world map.",
       siteLink: "",
       repoLink: "https://github.com/Mena-saleh/TraveLog",
       hasSiteLink: false,
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Questions Tagging System",
       tags: ["AI", "NLP", "Transformers"],
       description:
-        "An automatic question tagging system leveraging NLP pipelines and multi-label classification techniques on a 10% sample of Stack Overflow questions",
+        "An automatic question tagging system leveraging NLP pipelines and multi-label classification techniques on a 10% sample of Stack Overflow questions.",
       siteLink: "",
       repoLink: "https://github.com/Mena-saleh/Questions-Tagging-System",
       hasSiteLink: false,
