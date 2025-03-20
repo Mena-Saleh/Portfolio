@@ -1,535 +1,605 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mena Saleh</title>
-    <link rel="icon" type="image/x-icon" href="Images/Icon.png" />
-    <link rel="stylesheet" href="CSS/main.css" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mena Saleh</title>
+        <link rel="icon" type="image/x-icon" href="Images/Icon.png" />
+        <link rel="stylesheet" href="CSS/main.css" />
 
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-      rel="stylesheet"
-    />
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+            rel="stylesheet"
+        />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Libraries and animations -->
-    <link rel="stylesheet" href="Lib/Splide/splide.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-  </head>
-  <body id="particles-js">
-    <!-- Hero section -->
-    <header>
-      <!-- Hamburger menu for phones -->
-      <label>
-        <input type="checkbox" id="menuToggle" />
-        <span class="menu"> <span class="hamburger"></span> </span>
-        <ul>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#background">Background</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </label>
-      <!-- Normal navigation for big screens -->
-      <nav>
-        <a href="#" id="logo-link"
-          ><img id="logo" src="Images/Logo.png" alt="Logo"
-        /></a>
-        <ul>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#background">Background</a></li>
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="intro-container">
-        <div
-          class="intro-text animate__animated animate__zoomIn animate__faster"
-        >
-          <h1>Full Stack Developer <br />& Data Scientist</h1>
-          <p>
-            I craft elegant designs powered by cutting-edge AI and robust
-            backend tech, delivering high-performance, scalable websites that
-            drive business growth.
-          </p>
-          <div class="intro-buttons-container">
-            <a href="index.html#contact"
-              ><button class="contact-btn">Contact Me</button></a
+        <!-- Libraries and animations -->
+        <link rel="stylesheet" href="Lib/Splide/splide.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    </head>
+    <body id="particles-js">
+        <!-- Hero section -->
+        <header>
+            <!-- Hamburger menu for phones -->
+            <label>
+                <input type="checkbox" id="menuToggle" />
+                <span class="menu"> <span class="hamburger"></span> </span>
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#background">Background</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </label>
+            <!-- Normal navigation for big screens -->
+            <nav>
+                <a href="#" id="logo-link"
+                    ><img id="logo" src="Images/Logo.png" alt="Logo"
+                /></a>
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#background">Background</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="intro-container">
+                <div
+                    class="intro-text animate__animated animate__zoomIn animate__faster"
+                >
+                    <h1>Full Stack Developer <br />& Data Scientist</h1>
+                    <p>
+                        I craft elegant designs powered by cutting-edge AI and
+                        robust backend tech, delivering high-performance,
+                        scalable websites that drive business growth.
+                    </p>
+                    <div class="intro-buttons-container">
+                        <a href="index.html#contact"
+                            ><button class="contact-btn">Contact Me</button></a
+                        >
+                        <a
+                            href="Mena_Saleh_CV.pdf"
+                            download="Mena_Saleh_CV.pdf"
+                        >
+                            <button>
+                                Download CV
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="intro-items">
+                    <div class="intro-icons">
+                        <ul>
+                            <li>
+                                <a
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/mena-saleh-23b947167/"
+                                    ><i class="fa-brands fa-linkedin"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/Mena-saleh"
+                                    ><i class="fa-brands fa-github"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    target="_blank"
+                                    href="https://www.facebook.com/mena.ashraf.501/"
+                                    ><i class="fa-brands fa-facebook"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="Images/Profile.png" alt="Portrait" />
+                </div>
+            </div>
+        </header>
+
+        <!-- About section -->
+        <section class="about-container" id="about">
+            <h1>Hi, I'm Mena. Nice to meet you.</h1>
+            <p>
+                I am a Computer Science graduate from Cairo, Egypt, I like
+                solving problems and stepping beyond my comfort zone. Besides
+                coding, my passions extend to culinary arts and drawing. Wanna
+                get to know me more?
+                <a href="mailto:Mena.a.saleh.2001@gmail.com"> Email me.</a>
+            </p>
+            <h2>What I work with<i class="fa-solid fa-hand-point-down"></i></h2>
+
+            <div class="about-content">
+                <div class="about-col animated-block-2">
+                    <img src="Images/WebDev.png" alt="WebDev" />
+                    <h2>Web Developement</h2>
+                    <p>
+                        I build robust web apps, seamlessly handling both
+                        frontend and backend development.
+                    </p>
+                    <h3>Languages I speak:</h3>
+                    <div
+                        class="splide"
+                        id="splide-1"
+                        aria-labelledby="carousel-heading"
+                    >
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/HTML.png"
+                                        alt="HTML"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/CSS.png"
+                                        alt="CSS"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/JS.png"
+                                        alt="JS"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/TS.png"
+                                        alt="TS"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/Bootstrap.png"
+                                        alt="Bootstrap"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/React.png"
+                                        alt="React"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/nodeJS.png"
+                                        alt="nodeJS"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/ASP.NET.png"
+                                        alt="ASP.Net"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/django.png"
+                                        alt="django"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/SQL Server.png"
+                                        alt="SQL Server"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/PostgreSQL.png"
+                                        alt="PostgreSQL"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-col animated-block-3">
+                    <img src="Images/AI.png" alt="AI" />
+                    <h2>Data Science</h2>
+                    <p>
+                        I leverage my analytical skills and knowledge of data
+                        science to deliver high-quality AI solutions.
+                    </p>
+                    <h3>Technologies I use:</h3>
+                    <div
+                        class="splide"
+                        id="splide-2"
+                        aria-labelledby="carousel-heading"
+                    >
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/NumPy.png"
+                                        alt="NumPy"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/Pandas.png"
+                                        alt="Pandas"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/scikit-learn.png"
+                                        alt="scikit-learn"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/Tensorflow.png"
+                                        alt="Tensorflow"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/NLTK.png"
+                                        alt="NLTK"
+                                    />
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        src="Images/Tech Stack/OpenCV.png"
+                                        alt="OpenCV"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational Background section -->
+        <section class="background-container" id="background">
+            <h1>Educational Background</h1>
+            <div class="background-text">
+                <p>
+                    I have a strong Academic background in Computer Science,
+                    Graduating from FCIS ASU in 2024, with a cumulative GPA of
+                </p>
+                <div class="circle-container">
+                    <div class="progress-circle" id="progress-circle">
+                        <div class="inner-circle">
+                            <span id="gpa-text">0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>
+                I am also a certified developer
+                <i class="fa-solid fa-certificate"></i>
+            </h2>
+            <p>Check out my accomplishments:</p>
+            <div
+                id="main-slider"
+                class="splide animated-block"
+                aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
             >
-            <a href="Mena_Saleh_CV.pdf" download="Mena_Saleh_CV.pdf">
-              <button>
-                Download CV <i class="fa-solid fa-arrow-right"></i>
-              </button>
-            </a>
-          </div>
-        </div>
-        <div class="intro-items">
-          <div class="intro-icons">
-            <ul>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/mena-saleh-23b947167/"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://github.com/Mena-saleh"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.facebook.com/mena.ashraf.501/"
-                  ><i class="fa-brands fa-facebook"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <img src="Images/Profile.png" alt="Portrait" />
-        </div>
-      </div>
-    </header>
-
-    <!-- About section -->
-    <section class="about-container" id="about">
-      <h1>Hi, I'm Mena. Nice to meet you.</h1>
-      <p>
-        I am a Computer Science graduate from Cairo, Egypt, I like solving
-        problems and stepping beyond my comfort zone. Besides coding, my
-        passions extend to culinary arts and drawing. Wanna get to know me more?
-        <a href="mailto:Mena.a.saleh.2001@gmail.com"> Email me.</a>
-      </p>
-      <h2>Services I provide <i class="fa-solid fa-hand-point-down"></i></h2>
-
-      <div class="about-content">
-        <div class="about-col animated-block-2">
-          <img src="Images/WebDev.png" alt="WebDev" />
-          <h2>Web Developement</h2>
-          <p>
-            I build robust web apps, seamlessly handling both frontend and
-            backend development.
-          </p>
-          <h3>Languages I speak:</h3>
-          <div class="splide" id="splide-1" aria-labelledby="carousel-heading">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <img src="Images/Tech Stack/HTML.png" alt="HTML" />
-                </li>
-                <li class="splide__slide">
-                  <img src="Images/Tech Stack/CSS.png" alt="CSS" />
-                </li>
-                <li class="splide__slide">
-                  <img src="Images/Tech Stack/JS.png" alt="JS" />
-                </li>
-                <li class="splide__slide">
-                  <img src="Images/Tech Stack/TS.png" alt="TS" />
-                </li>
-                <li class="splide__slide">
-                  <img src="Images/Tech Stack/Bootstrap.png" alt="Bootstrap" />
-                </li>
-                <li class="splide__slide">
-                  <img src="Images/Tech Stack/React.png" alt="React" />
-                </li>
-                <li class="splide__slide">
-                  <img src="Images/Tech Stack/nodeJS.png" alt="nodeJS" />
-                </li>
-                <li class="splide__slide">
-                  <img src="Images/Tech Stack/ASP.NET.png" alt="ASP.Net" />
-                </li>
-                <li class="splide__slide">
-                  <img src="Images/Tech Stack/django.png" alt="django" />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="Images/Tech Stack/SQL Server.png"
-                    alt="SQL Server"
-                  />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="Images/Tech Stack/PostgreSQL.png"
-                    alt="PostgreSQL"
-                  />
-                </li>
-              </ul>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/Supervised Machine Learning - Regression and Classification.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/Supervised Machine Learning - Advanced Learning Algorithms.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/Unsupervised Learning, Recommenders, Reinforcement Learning.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/Machine Learning Specialization.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/Neural Networks and Deep Learning.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/Improving Deep Neural Networks.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/Structuring Machine Learning Projects.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/Convolutional Neural Networks.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/Sequence Models.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/Deep Learning Specialization.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/DS 2022 Competition.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/EgFWD Professional Front-End Developer.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/EgFWD Advanced Full-Stack Web Developer.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/Problem Solving Intermediate Certificate.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/SQL Advanced Certificate.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img
+                                src="Images/Certificates/FCIS Graduation Certificate.jpg"
+                                alt=""
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Images/Certificates/MCSD1.jpg" alt="" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Images/Certificates/MCSD2.jpg" alt="" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Images/Certificates/MCSD3.jpg" alt="" />
+                        </li>
+                        <li class="splide__slide">
+                            <img src="Images/Certificates/MCSD4.jpg" alt="" />
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="about-col animated-block-3">
-          <img src="Images/AI.png" alt="AI" />
-          <h2>Data Science</h2>
-          <p>
-            I leverage my analytical skills and knowledge of data science to
-            deliver high-quality AI solutions.
-          </p>
-          <h3>Technologies I use:</h3>
-          <div class="splide" id="splide-2" aria-labelledby="carousel-heading">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <img src="Images/Tech Stack/NumPy.png" alt="NumPy" />
-                </li>
-                <li class="splide__slide">
-                  <img src="Images/Tech Stack/Pandas.png" alt="Pandas" />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="Images/Tech Stack/scikit-learn.png"
-                    alt="scikit-learn"
-                  />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="Images/Tech Stack/Tensorflow.png"
-                    alt="Tensorflow"
-                  />
-                </li>
-                <li class="splide__slide">
-                  <img src="Images/Tech Stack/NLTK.png" alt="NLTK" />
-                </li>
-                <li class="splide__slide">
-                  <img src="Images/Tech Stack/OpenCV.png" alt="OpenCV" />
-                </li>
-              </ul>
+        <!-- Portfolio section (content added from portfolio.js) -->
+        <section class="work-container" id="portfolio">
+            <div class="work-container-text">
+                <h1>Check out my work!</h1>
+                <p>
+                    Here is a porfolio with my most recent work, take a look <3
+                </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Educational Background section -->
-    <section class="background-container" id="background">
-      <h1>Educational Background</h1>
-      <div class="background-text">
-        <p>
-          I have a strong Academic background in Computer Science, Graduating
-          from FCIS ASU in 2024, with a cumulative GPA of
-        </p>
-        <div class="circle-container">
-          <div class="progress-circle" id="progress-circle">
-            <div class="inner-circle">
-              <span id="gpa-text">0.00</span>
+            <div class="filter-select-container">
+                <label for="project-type-filter"
+                    >Filter by project type:
+                </label>
+                <select id="project-type-filter">
+                    <option value="All">All</option>
+                    <option value="Web">Web</option>
+                    <option value="AI">AI</option>
+                    <option value="Game">Game</option>
+                </select>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <h2>
-        I am also a certified developer
-        <i class="fa-solid fa-certificate"></i>
-      </h2>
-      <p>Check out my accomplishments:</p>
-      <div
-        id="main-slider"
-        class="splide animated-block"
-        aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel."
-      >
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">
-              <img
-                src="Images/Certificates/Supervised Machine Learning - Regression and Classification.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              <img
-                src="Images/Certificates/Supervised Machine Learning - Advanced Learning Algorithms.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              <img
-                src="Images/Certificates/Unsupervised Learning, Recommenders, Reinforcement Learning.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              <img
-                src="Images/Certificates/Machine Learning Specialization.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              <img
-                src="Images/Certificates/Neural Networks and Deep Learning.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              <img
-                src="Images/Certificates/Improving Deep Neural Networks.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              <img
-                src="Images/Certificates/Structuring Machine Learning Projects.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              <img
-                src="Images/Certificates/Convolutional Neural Networks.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              <img src="Images/Certificates/DS 2022 Competition.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              <img
-                src="Images/Certificates/EgFWD Professional Front-End Developer.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              <img
-                src="Images/Certificates/EgFWD Advanced Full-Stack Web Developer.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              <img
-                src="Images/Certificates/Problem Solving Intermediate Certificate.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              <img
-                src="Images/Certificates/SQL Advanced Certificate.jpg"
-                alt=""
-              />
-            </li>
-            <li class="splide__slide">
-              <img src="Images/Certificates/MCSD1.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              <img src="Images/Certificates/MCSD2.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              <img src="Images/Certificates/MCSD3.jpg" alt="" />
-            </li>
-            <li class="splide__slide">
-              <img src="Images/Certificates/MCSD4.jpg" alt="" />
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+            <div id="portfolio-grid"></div>
+        </section>
 
-    <!-- Portfolio section (content added from portfolio.js) -->
-    <section class="work-container" id="portfolio">
-      <div class="work-container-text">
-        <h1>Check out my work!</h1>
-        <p>Here is a porfolio with my most recent work, take a look <3</p>
-      </div>
-
-      <div class="filter-select-container">
-        <label for="project-type-filter">Filter by project type: </label>
-        <select id="project-type-filter">
-          <option value="All">All</option>
-          <option value="Web">Web</option>
-          <option value="AI">AI</option>
-          <option value="Game">Game</option>
-        </select>
-      </div>
-
-      <div id="portfolio-grid"></div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-container" id="contact">
-      <h1>
-        Got a project in mind?<br />
-        Tell me about it.
-      </h1>
-      <div class="form-container animated-block">
-        <form id="contact-form" class="form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
+        <!-- Contact Section -->
+        <section class="contact-container" id="contact">
+            <h1>
+                Wanna make something awesome together?<br />
+                Tell me about it.
+            </h1>
+            <div class="form-container animated-block">
+                <form id="contact-form" class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="details">Details</label>
+                        <textarea
+                            id="details"
+                            name="details"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
             </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
+        </section>
+        <!-- Footer section -->
+
+        <footer>
+            <img id="logo" src="Images/Icon.png" alt="Logo" />
+            <p>Code is like humor. When you have to explain it, it’s bad.</p>
+            <div class="footer-icons">
+                <ul class="line-hover-effect">
+                    <li>
+                        <a target="_blank" href="tel:+201285005268"
+                            ><i class="fa-solid fa-phone"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            href="mailto:Mena.a.saleh.2001@gmail.com"
+                            ><i class="fa-solid fa-envelope"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/mena-saleh-23b947167/"
+                            ><i class="fa-brands fa-linkedin"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/Mena-saleh"
+                            ><i class="fa-brands fa-github"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                            href="https://www.facebook.com/mena.ashraf.501/"
+                            ><i class="fa-brands fa-facebook"></i
+                        ></a>
+                    </li>
+                </ul>
             </div>
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label for="project">Type of project</label>
-              <select id="project" name="project" required>
-                <option value="">Select project type</option>
-                <option value="Web App">Web App</option>
-                <option value="AI Service">AI Service</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="budget">Budget</label>
-              <select id="budget" name="budget" required>
-                <option value="">Select budget</option>
-                <option value="$200 - $1000">$200 - $1,000</option>
-                <option value="$1,000 - $5,000">$1,000 - $5,000</option>
-                <option value="5,000+">$5,000+</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="details">Additional details</label>
-            <textarea id="details" name="details" required></textarea>
-          </div>
-          <button type="submit" class="submit-button">Submit</button>
-        </form>
-      </div>
-    </section>
-    <!-- Footer section -->
 
-    <footer>
-      <img id="logo" src="Images/Icon.png" alt="Logo" />
-      <p>Code is like humor. When you have to explain it, it’s bad.</p>
-      <div class="footer-icons">
-        <ul class="line-hover-effect">
-          <li>
-            <a target="_blank" href="tel:+201285005268"
-              ><i class="fa-solid fa-phone"></i
-            ></a>
-          </li>
-          <li>
-            <a target="_blank" href="mailto:Mena.a.saleh.2001@gmail.com"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/mena-saleh-23b947167/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://github.com/Mena-saleh"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.facebook.com/mena.ashraf.501/"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
+            <p>Made with <i class="fa-regular fa-heart"></i> by Mena</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="JS/particles.js"></script>
+        <script src="JS/main.js"></script>
+        <script src="Lib/Splide/splide-extension-auto-scroll.min.js"></script>
+        <script src="Lib/Splide/splide.min.js"></script>
+        <script src="JS/portfolio.js"></script>
+        <script>
+            // First slider
+            const splide1 = new Splide("#splide-1", {
+                arrows: false,
+                type: "loop",
+                drag: "free",
+                focus: "center",
+                perPage: 3,
+                autoScroll: {
+                    speed: 0.5,
+                },
+            });
 
-      <p>Made with <i class="fa-regular fa-heart"></i> by Mena</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="JS/particles.js"></script>
-    <script src="JS/main.js"></script>
-    <script src="Lib/Splide/splide-extension-auto-scroll.min.js"></script>
-    <script src="Lib/Splide/splide.min.js"></script>
-    <script src="JS/portfolio.js"></script>
-    <script>
-      // First slider
-      const splide1 = new Splide("#splide-1", {
-        arrows: false,
-        type: "loop",
-        drag: "free",
-        focus: "center",
-        perPage: 3,
-        autoScroll: {
-          speed: 0.5,
-        },
-      });
+            splide1.mount(window.splide.Extensions);
 
-      splide1.mount(window.splide.Extensions);
+            // Second slider
+            const splide2 = new Splide("#splide-2", {
+                arrows: false,
+                type: "loop",
+                drag: "free",
+                focus: "center",
+                perPage: 3,
+                autoScroll: {
+                    speed: 0.4,
+                },
+            });
 
-      // Second slider
-      const splide2 = new Splide("#splide-2", {
-        arrows: false,
-        type: "loop",
-        drag: "free",
-        focus: "center",
-        perPage: 3,
-        autoScroll: {
-          speed: 0.4,
-        },
-      });
+            splide2.mount(window.splide.Extensions);
 
-      splide2.mount(window.splide.Extensions);
+            // Certificates carousel
+            var main = new Splide("#main-slider", {
+                type: "slide",
+                width: "100vw",
+                arrows: true,
+                height: "auto",
+            });
 
-      // Certificates carousel
-      var main = new Splide("#main-slider", {
-        type: "slide",
-        width: "100vw",
-        arrows: true,
-        height: "auto",
-      });
+            main.mount();
+        </script>
 
-      main.mount();
-    </script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: "QGls0Jha4EXq-D09c",
+                });
+            })();
+        </script>
+        <script type="text/javascript">
+            document
+                .getElementById("contact-form")
+                .addEventListener("submit", function (event) {
+                    event.preventDefault();
 
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "QGls0Jha4EXq-D09c",
-        });
-      })();
-    </script>
-    <script type="text/javascript">
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
+                    var serviceID = "service_ebru6ds";
+                    var templateID = "template_2ir2vyd";
 
-          // These IDs from the previous steps
-          var serviceID = "service_ebru6ds";
-          var templateID = "template_2ir2vyd";
-
-          emailjs.sendForm(serviceID, templateID, this).then(
-            function () {
-              Swal.fire({
-                title: "Success!",
-                text: "Your message has been sent successfully.",
-                icon: "success",
-                confirmButtonText: "OK",
-              });
-            },
-            function (error) {
-              Swal.fire({
-                title: "Error!",
-                text: "Failed to send your message. Please try again later.",
-                icon: "error",
-                confirmButtonText: "OK",
-              });
-            }
-          );
-        });
-    </script>
-  </body>
+                    emailjs.sendForm(serviceID, templateID, this).then(
+                        function () {
+                            Swal.fire({
+                                title: "Success!",
+                                text: "Your message has been sent successfully.",
+                                icon: "success",
+                                confirmButtonText: "OK",
+                            });
+                        },
+                        function (error) {
+                            Swal.fire({
+                                title: "Error!",
+                                text: "Failed to send your message. Please try again later.",
+                                icon: "error",
+                                confirmButtonText: "OK",
+                            });
+                        }
+                    );
+                });
+        </script>
+    </body>
 </html>
