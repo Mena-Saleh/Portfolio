@@ -395,6 +395,15 @@ button.contact-btn:hover {
     .intro-text button {
         font-size: 0.8rem;
     }
+    .intro-icons i {
+        transform: scale(140%);
+    }
+    .intro-items img {
+        width: 55%;
+    }
+    .intro-icons {
+        width: 50%;
+    }
 }
 
 /* About */
