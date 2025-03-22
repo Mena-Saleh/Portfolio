@@ -331,7 +331,8 @@ button.contact-btn:hover {
 .intro-items {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
 }
 .intro-items img {
     width: 65%;
@@ -346,12 +347,14 @@ button.contact-btn:hover {
 .intro-icons ul li {
     display: inline;
 }
+
 .intro-icons i {
     transform: scale(150%);
     color: #525267;
     margin: 0 5%;
     transition: 0.3s;
 }
+
 .fa-leetcode-icon {
     width: 1em;
     height: 1em;
@@ -389,20 +392,29 @@ button.contact-btn:hover {
     .intro-text h1 {
         font-size: 2rem;
     }
+
     .intro-text p {
         font-size: 1rem;
     }
+
+    .intro-items {
+        margin-top: 20px;
+    }
+
     .intro-text button {
         font-size: 0.8rem;
     }
-    .intro-icons i {
-        transform: scale(140%);
-    }
+
     .intro-items img {
-        width: 55%;
+        width: 63%;
     }
+
     .intro-icons {
         width: 50%;
+    }
+    .intro-icons i {
+        transform: scale(130%);
+        margin: 0 3%;
     }
 }
 
