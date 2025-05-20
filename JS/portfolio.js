@@ -1,6 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const entries = [
     {
+      title: "Cinemus",
+      tags: ["Next.js", "Bun", "Zustand", "CSS Modules"],
+      description:
+        "A responsive Next.js app using the TMDB API to search movies, view details, and manage favorites. Includes SSR, secure route handlers, loading skeletons, and clean state management for a polished UX.",
+      siteLink: "https://cinemus.vercel.app/",
+      repoLink: "https://github.com/Mena-saleh/Cinemus",
+      hasSiteLink: true,
+      imgSrc: "Images/Portfolio/Cinemus.png",
+      imgAlt: "Cinemus",
+      type: "Web",
+    },
+    {
       title: "TreeVis",
       tags: ["JavaScript", "Algorithms", "Visualization"],
       description:
@@ -85,18 +97,18 @@ document.addEventListener("DOMContentLoaded", () => {
       imgAlt: "Animal Runner",
       type: "Game",
     },
-    {
-      title: "Photo Gallery",
-      tags: ["HTML", "CSS", "JavaScript"],
-      description:
-        "A photo gallery app featuring photos from Unsplash API, additionally, photos can be uploaded to local storage and custom validation is applied.",
-      siteLink: "https://mena-saleh.github.io/Photo-Gallery/",
-      repoLink: "https://github.com/Mena-saleh/Photo-Gallery",
-      hasSiteLink: true,
-      imgSrc: "Images/Portfolio/Photo Gallery.png",
-      imgAlt: "Photo Gallery",
-      type: "Web",
-    },
+    // {
+    //   title: "Photo Gallery",
+    //   tags: ["HTML", "CSS", "JavaScript"],
+    //   description:
+    //     "A photo gallery app featuring photos from Unsplash API, additionally, photos can be uploaded to local storage and custom validation is applied.",
+    //   siteLink: "https://mena-saleh.github.io/Photo-Gallery/",
+    //   repoLink: "https://github.com/Mena-saleh/Photo-Gallery",
+    //   hasSiteLink: true,
+    //   imgSrc: "Images/Portfolio/Photo Gallery.png",
+    //   imgAlt: "Photo Gallery",
+    //   type: "Web",
+    // },
     {
       title: "Mena's Italian",
       tags: ["HTML", "CSS", "JavaScript"],
@@ -112,8 +124,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   const template = (entry, index) => `
-    <div class="work-entry ${
-      index % 2 == 0 ? "animated-block-2" : "animated-block-3"
+    <div class="work-entry ${index % 2 == 0 ? "animated-block-2" : "animated-block-3"
     }" data-type="${entry.type}">
       <div class="work-entry-top">
         <div class="work-entry-title">
@@ -126,14 +137,12 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
       <div class="work-entry-desc">
         <p>${entry.description}</p>
-        ${
-          entry.hasSiteLink
-            ? `<a target="_blank" href="${entry.siteLink}" class="link-site">Visit site <i class="fa-solid fa-eye"></i></a>`
-            : ""
-        }
-        <a target="_blank" href="${
-          entry.repoLink
-        }" class="link-repo">GitHub repo <i class="fa-brands fa-github"></i></a>
+        ${entry.hasSiteLink
+      ? `<a target="_blank" href="${entry.siteLink}" class="link-site">Visit site <i class="fa-solid fa-eye"></i></a>`
+      : ""
+    }
+        <a target="_blank" href="${entry.repoLink
+    }" class="link-repo">GitHub repo <i class="fa-brands fa-github"></i></a>
       </div>
     </div>
   `;

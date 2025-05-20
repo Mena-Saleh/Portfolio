@@ -19,6 +19,7 @@ a {
 }
 
 @media only screen and(max-width: 800px) {
+
     p,
     a {
         line-height: 1.5rem;
@@ -56,6 +57,7 @@ header label {
     margin: 0;
     padding: 0;
 }
+
 header label .menu {
     position: fixed;
     right: -115px;
@@ -108,29 +110,29 @@ header label input {
     display: none;
 }
 
-header label input:checked + .menu {
+header label input:checked+.menu {
     box-shadow: 0 0 0 100vw #163a83, 0 0 0 120vh #163a83;
     border-radius: 50%;
 }
 
-header label input:checked + .menu .hamburger {
+header label input:checked+.menu .hamburger {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
-header label input:checked + .menu .hamburger:after {
+header label input:checked+.menu .hamburger:after {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     bottom: 0;
 }
 
-header label input:checked + .menu .hamburger:before {
+header label input:checked+.menu .hamburger:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
 }
 
-header label input:checked + .menu + ul {
+header label input:checked+.menu+ul {
     opacity: 1;
     position: fixed;
 }
@@ -149,7 +151,7 @@ header label ul {
     list-style: none;
 }
 
-header label input:checked ~ ul {
+header label input:checked~ul {
     display: block;
 }
 
@@ -178,12 +180,14 @@ nav {
     backdrop-filter: blur(5px);
     z-index: 3;
 }
+
 nav ul {
     display: flex;
     width: 30%;
     justify-content: space-evenly;
     align-items: center;
 }
+
 nav ul li {
     list-style: none;
 }
@@ -225,6 +229,7 @@ nav img {
     height: 20px;
     z-index: 1;
 }
+
 .nav-active img {
     transition: 0.5s;
 }
@@ -232,6 +237,7 @@ nav img {
 .nav-active #logo-link {
     width: 160px;
 }
+
 .nav-active ul li a {
     transition: 0.5s;
     font-size: 1.05rem;
@@ -243,6 +249,7 @@ nav img {
     .nav-active {
         height: 22px;
     }
+
     header label {
         display: block;
     }
@@ -252,8 +259,7 @@ nav img {
     }
 }
 
-@media only screen and (max-width: 800px) {
-}
+@media only screen and (max-width: 800px) {}
 
 /* Introduction */
 
@@ -272,6 +278,7 @@ nav img {
     padding-bottom: 5%;
     flex-basis: 80%;
 }
+
 .intro-text h1 {
     margin-bottom: 3%;
     background: linear-gradient(150deg, #cf78e0 0%, #1c469c 100%);
@@ -284,6 +291,7 @@ nav img {
     color: #525267;
     font-size: 1.2rem;
 }
+
 .intro-buttons-container {
     display: flex;
     align-items: baseline;
@@ -321,6 +329,7 @@ button.contact-btn {
     transition: 0.3s;
     font-weight: 300;
 }
+
 button.contact-btn:hover {
     background-color: transparent;
     border: 2px solid #1c469c;
@@ -334,6 +343,7 @@ button.contact-btn:hover {
     align-items: center;
     justify-content: space-between;
 }
+
 .intro-items img {
     width: 65%;
 }
@@ -412,6 +422,7 @@ button.contact-btn:hover {
     .intro-icons {
         width: 50%;
     }
+
     .intro-icons i {
         transform: scale(130%);
         margin: 0 3%;
@@ -424,12 +435,10 @@ button.contact-btn:hover {
     margin-top: 14%;
     height: auto;
     padding: 25px;
-    background: linear-gradient(
-        180deg,
-        #0c1f46 0%,
-        #3a4353 50%,
-        rgba(0, 0, 0, 0) 0%
-    );
+    background: linear-gradient(180deg,
+            #0c1f46 0%,
+            #3a4353 50%,
+            rgba(0, 0, 0, 0) 0%);
 }
 
 .about-container h1 {
@@ -446,6 +455,7 @@ button.contact-btn:hover {
     padding: 50px 0 20px;
     font-size: 1.5rem;
 }
+
 .about-container h2 i {
     margin-left: 10px;
     color: rgb(239, 210, 174);
@@ -504,6 +514,7 @@ button.contact-btn:hover {
     width: 20%;
     padding: 3% 0;
 }
+
 .about-col h2 {
     background: linear-gradient(40deg, #cf78e0 0%, #1c469c 100%);
     -webkit-background-clip: text;
@@ -533,6 +544,7 @@ button.contact-btn:hover {
     align-items: center;
     justify-content: center;
 }
+
 .about-col .splide__track {
     width: 80%;
     border-radius: 20px;
@@ -565,6 +577,7 @@ button.contact-btn:hover {
         width: 90%;
         margin: 3% auto 0;
     }
+
     .about-col {
         padding: 10px 0;
         margin-bottom: 15%;
@@ -583,12 +596,10 @@ button.contact-btn:hover {
 
     .about-container {
         padding-top: 20px;
-        background: linear-gradient(
-            180deg,
-            #0c1f46 0%,
-            #646464 35%,
-            rgba(0, 0, 0, 0) 0%
-        );
+        background: linear-gradient(180deg,
+                #0c1f46 0%,
+                #646464 35%,
+                rgba(0, 0, 0, 0) 0%);
     }
 
     .about-col h2 {
@@ -640,6 +651,7 @@ button.contact-btn:hover {
     padding: 30px 0 0;
     font-size: 1.5rem;
 }
+
 .background-container h2 i {
     margin-left: 10px;
     color: #ffd700;
@@ -688,6 +700,7 @@ button.contact-btn:hover {
     align-items: center;
     justify-content: center;
 }
+
 #main-slider .splide__slide img {
     width: 50%;
     box-shadow: 1px 1px 8px 0.5px #3a435344;
@@ -794,16 +807,15 @@ button.contact-btn:hover {
     padding: 2% 4%;
     box-shadow: 1px 1px 8px 0.5px #3a435344;
     backdrop-filter: blur(5px);
-    background: linear-gradient(
-        130deg,
-        rgba(12, 31, 70, 0.05) 0%,
-        rgba(255, 255, 255, 0.4) 100%
-    );
+    background: linear-gradient(130deg,
+            rgba(12, 31, 70, 0.05) 0%,
+            rgba(255, 255, 255, 0.4) 100%);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .work-entry-top {
     display: flex;
     flex-direction: row;
@@ -822,6 +834,7 @@ button.contact-btn:hover {
     cursor: pointer;
     flex-basis: 60%;
 }
+
 .work-entry-img img {
     width: 100%;
     transition: 0.3s;
@@ -839,6 +852,7 @@ button.contact-btn:hover {
     margin-top: 20px;
     cursor: pointer;
 }
+
 .work-entry-title span {
     box-shadow: 1px 1px 3px 1px #aaaaaa;
     background-color: #7e8ca5cc;
@@ -895,12 +909,15 @@ button.contact-btn:hover {
         width: 80%;
         padding: 5px 10px;
     }
+
     .work-container h1 {
         font-size: 1.6rem;
     }
+
     .work-container p {
         font-size: 1rem;
     }
+
     .filter-select-container {
         font-size: 0.9rem;
         margin-bottom: 30px;
@@ -917,9 +934,11 @@ button.contact-btn:hover {
         text-align: center;
         padding: 20px 5px 0;
     }
+
     .work-entry-title h2 {
         font-size: 1.7rem;
     }
+
     .work-entry-title h3 {
         font-size: 0.6rem;
     }
@@ -937,6 +956,7 @@ button.contact-btn:hover {
         font-size: 1rem;
         color: #1c469c;
     }
+
     #portfolio-grid {
         grid-template-columns: 1fr;
         padding: 0px;
@@ -1035,6 +1055,7 @@ textarea {
     .contact-container h1 {
         font-size: 2.2rem;
     }
+
     .form-row {
         flex-direction: column;
     }
@@ -1044,6 +1065,7 @@ textarea {
         text-align: center;
     }
 }
+
 /* Footer */
 
 footer {
@@ -1072,6 +1094,7 @@ footer p {
     justify-content: center;
     align-items: center;
 }
+
 .footer-icons ul li {
     padding: 0 5px;
     display: inline;
@@ -1084,6 +1107,7 @@ footer p {
     padding: 0 10px;
     transition: 0.3s;
 }
+
 .footer-icons i:hover {
     color: #1c469c;
     transition: 0.3s;
@@ -1094,12 +1118,14 @@ footer p i {
     padding: 0 4px;
     transform: scale(110%);
 }
+
 /* Responsiveness for mobile */
 
 @media only screen and (max-width: 800px) {
     footer {
         margin-top: 150px;
     }
+
     footer p {
         font-size: 0.95rem;
         padding: 15px 40px;
@@ -1113,6 +1139,7 @@ footer p i {
         opacity: 0;
         transform: scale(0%);
     }
+
     to {
         opacity: 1;
         transform: scale(100%);
@@ -1124,6 +1151,7 @@ footer p i {
         opacity: 0;
         transform: translatex(-100px);
     }
+
     to {
         opacity: 1;
         transform: translatex(0px);
@@ -1135,6 +1163,7 @@ footer p i {
         opacity: 0;
         transform: translatex(100px);
     }
+
     to {
         opacity: 1;
         transform: translatex(0px);
@@ -1152,6 +1181,7 @@ footer p i {
     animation-timeline: view();
     animation-range: entry 0% cover 30%;
 }
+
 .animated-block-3 {
     animation: appear-3 linear;
     animation-timeline: view();
