@@ -15,6 +15,7 @@ resizeCanvas();
 
 let numParticles;
 let particleSize;
+
 // Less and smaller particles for phones
 if (window.innerWidth < 800) {
   numParticles = 6;

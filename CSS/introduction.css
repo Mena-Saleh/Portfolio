@@ -1,0 +1,167 @@
+/* Introduction */
+
+.intro-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 80%;
+    margin: auto;
+    padding-top: 12%;
+    border-bottom: 2px double var(--color-navy-dark);
+}
+
+.intro-text {
+    padding-bottom: 5%;
+    flex-basis: 80%;
+}
+
+.intro-text h1 {
+    margin-bottom: 3%;
+    background: linear-gradient(150deg, #cf78e0 0%, var(--color-navy-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+}
+
+.intro-text p {
+    color: var(--color-navy-grey-1);
+    font-size: 1.2rem;
+}
+
+.intro-buttons-container {
+    display: flex;
+    align-items: baseline;
+    width: 150%;
+}
+
+.intro-text button {
+    height: 40px;
+    margin: 40px 20px 0 0;
+    padding: 6px 14px;
+    background-color: transparent;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    color: var(--color-black);
+    font-size: 1rem;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+.intro-text button i {
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.intro-text button:hover i {
+    transform: translatex(5px);
+    transition: 0.3s;
+}
+
+button.contact-btn {
+    background-color: var(--color-navy-light);
+    border: 2px solid var(--color-navy-light);
+    color: var(--color-white);
+    transition: 0.3s;
+    font-weight: 300;
+}
+
+button.contact-btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-navy-light);
+    color: var(--color-navy-light);
+    transition: 0.3s;
+}
+
+.intro-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-items img {
+    width: 65%;
+}
+
+.intro-icons {
+    padding-bottom: 2%;
+    width: 40%;
+    align-self: flex-end;
+}
+
+.intro-icons ul li {
+    display: inline;
+}
+
+.intro-icons i {
+    transform: scale(150%);
+    color: var(--color-navy-grey-1);
+    margin: 0 5%;
+    transition: 0.3s;
+}
+
+.fa-leetcode-icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-color: var(--color-navy-grey-1);
+    -webkit-mask: url("../Images/Icons/Leetcode.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url("../Images/Icons/Leetcode.svg") no-repeat center;
+    mask-size: contain;
+    transition: background-color 0.3s ease;
+}
+
+.fa-leetcode-icon:hover {
+    background-color: var(--color-navy-light);
+}
+
+.intro-icons i:hover {
+    color: var(--color-navy-light);
+    transition: 0.3s;
+    transform: scale(175%) translateY(-3px);
+}
+
+/* Responsiveness for mobile */
+
+@media only screen and (max-width: 800px) {
+    .intro-container {
+        padding-top: 35%;
+        flex-direction: column;
+    }
+
+    .intro-buttons-container {
+        width: 100%;
+    }
+
+    .intro-text h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+    }
+
+    .intro-items {
+        margin-top: 20px;
+    }
+
+    .intro-text button {
+        font-size: 0.8rem;
+    }
+
+    .intro-items img {
+        width: 63%;
+    }
+
+    .intro-icons {
+        width: 50%;
+    }
+
+    .intro-icons i {
+        transform: scale(130%);
+        margin: 0 3%;
+    }
+}
