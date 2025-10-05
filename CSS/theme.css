@@ -8,17 +8,24 @@
     --color-navy-dark: #0c1f46;
 
     /* Neutrals */
-    --color-white: #ffffff;
+    --color-white: #f9f9f9;
     --color-black: #131515;
 
     --color-grey-1: #333333;
     --color-grey-2: #404040;
     --color-grey-3: #646464;
     --color-grey-4: #777777;
+    --color-grey-5: #bbbbbb;
 
     /* Mixed */
     --color-navy-grey-1: #525267;
     --color-navy-grey-2: #3a4353;
     --color-navy-grey-3: #3a435344;
+
+    /* Helper colors */
+    --color-purple: #cf78e0;
+
+    /* Background */
+    --color-bg: #ffffff;
 
 }

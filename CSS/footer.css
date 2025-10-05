@@ -1,8 +1,8 @@
 /* Footer */
 
 footer {
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 1px 15px 1px #bbb;
+    background-color: transparent;
+    box-shadow: 0px 1px 15px 1px var(--color-grey-5);
     text-align: center;
     height: auto;
     padding: 30px 0;

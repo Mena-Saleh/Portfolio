@@ -12,7 +12,7 @@
 }
 
 .background-container h1 {
-    background: linear-gradient(150deg, #cf78e0 0%, var(--color-navy-light) 100%);
+    background: linear-gradient(150deg, var(--color-purple) 0%, var(--color-navy-light) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;

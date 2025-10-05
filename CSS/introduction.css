@@ -18,7 +18,7 @@
 
 .intro-text h1 {
     margin-bottom: 3%;
-    background: linear-gradient(150deg, #cf78e0 0%, var(--color-navy-light) 100%);
+    background: linear-gradient(150deg, var(--color-purple) 0%, var(--color-navy-light) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 3.5rem;
