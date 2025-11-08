@@ -1,17 +1,5 @@
 export const projects = [
   {
-    title: "Cinemus",
-    tags: ["Next.js", "Bun", "Zustand", "CSS Modules"],
-    description:
-      "A responsive Next.js app using the TMDB API to search movies, view details, and manage favorites. Includes SSR, secure route handlers, loading skeletons, and clean state management for a polished UX.",
-    siteLink: "https://cinemus.vercel.app/",
-    repoLink: "https://github.com/Mena-saleh/Cinemus",
-    hasSiteLink: true,
-    imgSrc: "Images/Portfolio/Cinemus.png",
-    imgAlt: "Cinemus",
-    type: "Web",
-  },
-  {
     title: "TreeVis",
     tags: ["JavaScript", "Algorithms", "Visualization"],
     description:
@@ -21,6 +9,18 @@ export const projects = [
     hasSiteLink: true,
     imgSrc: "Images/Portfolio/TreeVis.png",
     imgAlt: "TreeVis",
+    type: "Web",
+  },
+  {
+    title: "Cinemus",
+    tags: ["Next.js", "Bun", "Zustand", "CSS Modules"],
+    description:
+      "A responsive Next.js app using the TMDB API to search movies, view details, and manage favorites. Includes SSR, secure route handlers, loading skeletons, and clean state management for a polished UX.",
+    siteLink: "https://cinemus.vercel.app/",
+    repoLink: "https://github.com/Mena-saleh/Cinemus",
+    hasSiteLink: true,
+    imgSrc: "Images/Portfolio/Cinemus.png",
+    imgAlt: "Cinemus",
     type: "Web",
   },
   {
