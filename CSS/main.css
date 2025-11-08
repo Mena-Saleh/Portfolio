@@ -1,4 +1,11 @@
 @import url("theme.css");
+@import url("nav.css");
+@import url("introduction.css");
+@import url("about.css");
+@import url("background.css");
+@import url("portfolio.css");
+@import url("contact.css");
+@import url("footer.css");
 
 * {
     margin: 0;

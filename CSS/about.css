@@ -11,14 +11,14 @@
 }
 
 .about-container h1 {
-    color: var(--color-white);
+    color: var(--color-white-1);
     text-align: center;
     margin: 30px 0 20px;
     font-size: 2rem;
 }
 
 .about-container h2 {
-    color: var(--color-white);
+    color: var(--color-white-1);
     text-align: center;
     font-weight: 700;
     padding: 50px 0 20px;
@@ -32,7 +32,7 @@
 }
 
 .about-container p {
-    color: var(--color-white);
+    color: var(--color-white-1);
     padding: 1% 0;
     width: 70%;
     margin: auto;
@@ -42,16 +42,16 @@
 .about-container a {
     text-decoration: underline;
     text-decoration-color: transparent;
-    color: var(--color-white);
+    color: var(--color-white-1);
     font-weight: 600;
     font-size: 1.2rem;
     font-weight: 700;
-    text-shadow: var(--color-white);
+    text-shadow: var(--color-white-1);
     transition: 0.5s;
 }
 
 .about-container a:hover {
-    text-decoration-color: var(--color-white);
+    text-decoration-color: var(--color-white-1);
     transition: 0.5s;
 }
 
@@ -70,7 +70,7 @@
 .about-col {
     flex-basis: 46%;
     padding: 10px 0;
-    background-color: var(--color-white);
+    background-color: var(--color-white-1);
     border-radius: 35px;
     height: auto;
     display: flex;

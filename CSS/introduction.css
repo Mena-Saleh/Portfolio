@@ -62,7 +62,7 @@
 button.contact-btn {
     background-color: var(--color-navy-light);
     border: 2px solid var(--color-navy-light);
-    color: var(--color-white);
+    color: var(--color-white-1);
     transition: 0.3s;
     font-weight: 300;
 }

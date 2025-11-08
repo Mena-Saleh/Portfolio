@@ -86,7 +86,7 @@
 }
 
 .work-entry-title h3 {
-    color: var(--color-white);
+    color: var(--color-white-1);
     font-size: 0.7rem;
     margin-top: 20px;
     cursor: pointer;
