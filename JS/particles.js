@@ -1,7 +1,12 @@
 function initParticles() {
+  const container = document.getElementById("particles-js");
+
+  // Clear previous canvas (if any)
+  container.innerHTML = "";
+
   // Create canvas element
   const canvas = document.createElement("canvas");
-  document.getElementById("particles-js").appendChild(canvas);
+  container.appendChild(canvas);
   const ctx = canvas.getContext("2d");
 
   // Resize canvas to fill the browser window dynamically
