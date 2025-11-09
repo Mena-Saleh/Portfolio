@@ -35,6 +35,7 @@
     margin: 0 10px;
     height: 35px;
     padding: 0px 5px;
+    color: var(--color-navy-grey-2);
 }
 
 .work-entry {
@@ -93,8 +94,8 @@
 }
 
 .work-entry-title span {
-    box-shadow: 1px 1px 3px 1px #aaaaaa;
-    background-color: #7e8ca5cc;
+    box-shadow: 1px 1px 3px 1px var(--color-grey-5);
+    background-color: var(--color-navy-grey-4);
     padding: 0.2rem 0.3rem;
     margin: 0 5px 10px;
     border-radius: 5px;
@@ -201,5 +202,21 @@
         padding: 0px;
         gap: 60px 0px;
         box-sizing: border-box;
+    }
+}
+
+
+
+.dark {
+    .work-entry {
+        background: linear-gradient(130deg,
+                rgba(90, 90, 90, 0.15) 0%,
+                rgba(230, 230, 230, 0.05) 100%);
+        box-shadow: 1px 1px 8px 0.5px var(--color-navy-grey-5);
+
+    }
+
+    .filter-select-container select {
+        color: var(--color-grey-5);
     }
 }

@@ -6,6 +6,7 @@
 @import url("portfolio.css");
 @import url("contact.css");
 @import url("footer.css");
+@import url("themeToggle.css");
 
 * {
     margin: 0;

@@ -70,7 +70,7 @@
 .about-col {
     flex-basis: 46%;
     padding: 10px 0;
-    background-color: var(--color-white-1);
+    background-color: var(--color-bg);
     border-radius: 35px;
     height: auto;
     display: flex;
@@ -171,6 +171,15 @@
                 rgba(0, 0, 0, 0) 0%);
     }
 
+    .dark {
+        .about-container {
+            background: linear-gradient(180deg,
+                    var(--color-bg-2) 0%,
+                    var(--color-bg-3) 35%,
+                    rgba(0, 0, 0, 0) 0%);
+        }
+    }
+
     .about-col h2 {
         font-size: 1.6rem;
     }
@@ -181,5 +190,20 @@
 
     .about-col h3 {
         font-size: 1.1rem;
+    }
+}
+
+/* Dark mode */
+.dark {
+    .about-container {
+        background: linear-gradient(180deg,
+                var(--color-bg-2) 0%,
+                var(--color-bg-3) 50%,
+                rgba(0, 0, 0, 0) 0%);
+    }
+
+    .about-col {
+        background-color: var(--color-bg-2);
+        box-shadow: 1px 1px 8px 0.5px var(--color-navy-grey-5);
     }
 }

@@ -1,0 +1,78 @@
+:root {
+    /* Base sizes */
+    --toggleHeight: 40px;
+    --toggleWidth: calc(var(--toggleHeight) * 2);
+    --toggleBtnRadius: calc(var(--toggleHeight) * 0.625);
+
+    /* Colors */
+    --night: #423966;
+    --day: #FFBF71;
+    --white: #f9f9f9;
+    --lightBlue: #D9FBFF;
+    --grey: #dddddd20;
+}
+
+.theme-toggle {
+    position: relative;
+    height: var(--toggleHeight);
+    width: var(--toggleWidth);
+    border-radius: var(--toggleHeight);
+    background: var(--night);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    font-size: clamp(2px, 1vw, 4px);
+}
+
+.day {
+    background: var(--day);
+}
+
+.moon {
+    position: absolute;
+    border-radius: 50%;
+    transition: all 0.4s ease-in-out;
+    background: var(--night);
+
+    top: calc(var(--toggleHeight) * 0.1875);
+    left: calc(var(--toggleWidth) * 0.1);
+    transform: rotate(-75deg);
+    width: var(--toggleBtnRadius);
+    height: var(--toggleBtnRadius);
+
+    box-shadow:
+        calc(var(--toggleHeight) * 0.1875) calc(var(--toggleHeight) * 0.15625) 0 0 var(--lightBlue) inset,
+        var(--grey) 0 calc(var(--toggleHeight) * -0.4375) 0 calc(var(--toggleHeight) * -0.28125),
+        var(--grey) calc(var(--toggleHeight) * 0.1875) calc(var(--toggleHeight) * 0.4375) 0 calc(var(--toggleHeight) * -0.28125),
+        var(--grey) calc(var(--toggleHeight) * 0.125) calc(var(--toggleHeight) * 0.8125) 0 calc(var(--toggleHeight) * -0.25),
+        var(--grey) calc(var(--toggleHeight) * 0.375) calc(var(--toggleHeight) * 0.125) 0 calc(var(--toggleHeight) * -0.25625),
+        var(--grey) calc(var(--toggleHeight) * 0.5) calc(var(--toggleHeight) * 0.5) 0 calc(var(--toggleHeight) * -0.28125),
+        var(--grey) calc(var(--toggleHeight) * 0.375) calc(var(--toggleHeight) * 0.8125) 0 calc(var(--toggleHeight) * -0.28125),
+        var(--grey) calc(var(--toggleHeight) * -0.25) calc(var(--toggleHeight) * 0.4375) 0 calc(var(--toggleHeight) * -0.28125),
+        var(--grey) calc(var(--toggleHeight) * -0.0625) calc(var(--toggleHeight) * 0.625) 0 calc(var(--toggleHeight) * -0.28125);
+}
+
+.sun {
+    top: calc(var(--toggleHeight) * 0.28125);
+    left: calc(var(--toggleWidth) * 0.6);
+    transform: rotate(0deg);
+    width: calc(var(--toggleBtnRadius) * 0.7);
+    height: calc(var(--toggleBtnRadius) * 0.7);
+    background: var(--white);
+    box-shadow:
+        calc(var(--toggleHeight) * 0.1875) calc(var(--toggleHeight) * 0.1875) 0 calc(var(--toggleHeight) * 0.3125) var(--white) inset,
+        0 calc(var(--toggleHeight) * -0.3125) 0 calc(var(--toggleHeight) * -0.16875) var(--white),
+        calc(var(--toggleHeight) * 0.21875) calc(var(--toggleHeight) * -0.21875) 0 calc(var(--toggleHeight) * -0.1875) var(--white),
+        calc(var(--toggleHeight) * 0.3125) 0 0 calc(var(--toggleHeight) * -0.16875) var(--white),
+        calc(var(--toggleHeight) * 0.21875) calc(var(--toggleHeight) * 0.21875) 0 calc(var(--toggleHeight) * -0.1875) var(--white),
+        0 calc(var(--toggleHeight) * 0.3125) 0 calc(var(--toggleHeight) * -0.16875) var(--white),
+        calc(var(--toggleHeight) * -0.21875) calc(var(--toggleHeight) * 0.21875) 0 calc(var(--toggleHeight) * -0.1875) var(--white),
+        calc(var(--toggleHeight) * -0.3125) 0 0 calc(var(--toggleHeight) * -0.16875) var(--white),
+        calc(var(--toggleHeight) * -0.21875) calc(var(--toggleHeight) * -0.21875) 0 calc(var(--toggleHeight) * -0.1875) var(--white);
+}
+
+
+@media only screen and (max-width: 1200px) {
+    :root {
+        --toggleHeight: 38px;
+    }
+}

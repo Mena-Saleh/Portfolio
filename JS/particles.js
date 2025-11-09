@@ -11,6 +11,17 @@ function resizeCanvas() {
 }
 resizeCanvas();
 
+// Helper to get particle colors from theme
+function getParticleColors() {
+  const styles = getComputedStyle(document.documentElement);
+  return [
+    styles.getPropertyValue("--color-particle-1").trim(),
+    styles.getPropertyValue("--color-particle-2").trim(),
+    styles.getPropertyValue("--color-particle-3").trim(),
+  ];
+}
+
+
 // Particle settings
 
 let numParticles;
@@ -27,11 +38,7 @@ if (window.innerWidth < 800) {
 
 const particles = [];
 const maxInitialVelocity = 0.5;
-const particleColors = [
-  "rgba(12, 31, 70, 0.01)",
-  "rgba(12, 31, 70, 0.02)",
-  "rgba(12, 31, 70, 0.03)",
-];
+const particleColors = getParticleColors();
 
 const maxSpeed = 0.6; // threshold speed for applying friction
 const friction = 0.99; // friction factor

@@ -98,3 +98,14 @@ textarea {
         text-align: center;
     }
 }
+
+/* Dark mode */
+.dark {
+
+    input,
+    select,
+    textarea {
+        color: var(--color-navy-grey-5);
+    }
+
+}

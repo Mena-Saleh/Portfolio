@@ -12,6 +12,18 @@ function selfMinimizeNav() {
   }
 }
 
+// Helper to get particle colors from theme
+function getGradientColors() {
+  const styles = getComputedStyle(document.documentElement);
+  return [
+    styles.getPropertyValue("--color-purple").trim(),
+    styles.getPropertyValue("--color-navy-light").trim(),
+    styles.getPropertyValue("--color-grey-5").trim(),
+  ];
+}
+
+const gradientColors = getGradientColors();
+
 // Closing hamburger menu when clicking a link in it (on phones)
 document.querySelectorAll("header label a").forEach((link) => {
   link.addEventListener("click", function () {
@@ -40,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
       currentPercentage = percentage;
       clearInterval(progressInterval);
     }
-    progressCircle.style.background = `conic-gradient(#cf78e0 0%, #1c469c ${currentPercentage}%, #eee ${currentPercentage}% 100%)`;
+    progressCircle.style.background = `conic-gradient(${gradientColors[0]} 0%, ${gradientColors[1]} ${currentPercentage}%, ${gradientColors[2]} ${currentPercentage}% 100%)`;
     gpaText.innerText = ((currentPercentage / 100) * maxGPA).toFixed(2);
   };
 
@@ -61,4 +73,27 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   observer.observe(progressCircle);
+});
+
+
+// Theme toggle (with hero image updates)
+const profileImg = document.getElementById("intro-profile");
+
+function updateProfileImage() {
+  const isDark = document.documentElement.classList.contains("dark");
+  profileImg.src = isDark
+    ? "Images/ProfileDark.png"
+    : "Images/Profile.png";
+}
+
+// Run on load
+updateProfileImage();
+
+document.querySelectorAll(".theme-toggle").forEach(toggle => {
+  toggle.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark");
+    document.querySelectorAll(".moon").forEach(m => m.classList.toggle("sun"));
+    document.querySelectorAll(".theme-toggle").forEach(t => t.classList.toggle("day"));
+    updateProfileImage();
+  });
 });

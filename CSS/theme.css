@@ -22,11 +22,54 @@
     --color-navy-grey-1: #525267;
     --color-navy-grey-2: #3a4353;
     --color-navy-grey-3: #3a435344;
+    --color-navy-grey-4: #7e8ca5cc;
 
-    /* Helper colors */
+    /* Particles */
+    --color-particle-1: rgba(12, 31, 70, 0.01);
+    --color-particle-2: rgba(12, 31, 70, 0.02);
+    --color-particle-3: rgba(12, 31, 70, 0.03);
+
+    /* Helpers */
     --color-purple: #cf78e0;
 
     /* Background */
-    --color-bg: #ffffff;
+    --color-bg: #f9f9f9;
+}
 
+/* Dark mode */
+:root.dark {
+    /* Primary */
+    --color-navy: #3B82F6;
+    --color-navy-light: #60A5FA;
+    --color-navy-dark: #ebebeb;
+
+    /* Neutrals */
+    --color-black: #f9f9f9;
+    --color-white-1: #f9f9f9;
+    --color-white-2: #f9f9f9aa;
+
+    --color-grey-1: #ededed;
+    --color-grey-2: #e7e6e6;
+    --color-grey-3: #dedede;
+    --color-grey-4: #cecece;
+    --color-grey-5: #354852;
+
+    /* Particles */
+    --color-particle-1: rgba(255, 255, 255, 0.01);
+    --color-particle-2: rgba(255, 255, 255, 0.02);
+    --color-particle-3: rgba(173, 216, 230, 0.03);
+
+    /* Mixed */
+    --color-navy-grey-1: #e7e6e6;
+    --color-navy-grey-2: #3a4353;
+    --color-navy-grey-3: #3a435344;
+    --color-navy-grey-4: #537cc4cc;
+
+    /* Helpers */
+    --color-purple: #2563EB;
+
+    /* Background */
+    --color-bg: #101619;
+    --color-bg-2: #182024;
+    --color-bg-3: #3c474d;
 }
