@@ -168,13 +168,15 @@ nav ul li a:hover::after {
 
 }
 
-nav img {
-    width: 100%;
-}
-
 #logo-link {
-    width: 180px;
+    width: auto;
     transition: 0.5s;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-left: 10px;
+    color: var(--color-navy-light);
+    font-family: "Nunito Sans", sans-serif;
 }
 
 .nav-active {
@@ -183,12 +185,8 @@ nav img {
     z-index: 1;
 }
 
-.nav-active img {
-    transition: 0.5s;
-}
-
 .nav-active #logo-link {
-    width: 160px;
+    font-size: 1.6rem;
 }
 
 .nav-active ul li a {
@@ -212,12 +210,11 @@ nav img {
     }
 
     #logo-link {
-        width: 160px;
-        transition: 0.5s;
+        font-size: 1.6rem
     }
 
     .nav-active #logo-link {
-        width: 140px;
+        font-size: 1.4rem;
     }
 }
 
