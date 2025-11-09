@@ -174,9 +174,6 @@ nav img {
 
 #logo-link {
     width: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: 0.5s;
 }
 
