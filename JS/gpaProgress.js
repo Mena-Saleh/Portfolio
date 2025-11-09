@@ -19,8 +19,8 @@ function initGPA() {
     if (!progressCircle || !gpaText) return;
 
     let currentPercentage = 0;
-    const duration = 2000; // total animation time
-    const interval = 6;    // frame update interval
+    const duration = 600; // total animation time
+    const interval = 15;    // frame update interval
     const step = (percentage / duration) * interval;
 
     const gradientColors = getGradientColors();
