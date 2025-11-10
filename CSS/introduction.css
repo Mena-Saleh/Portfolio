@@ -46,7 +46,7 @@
     color: var(--color-black);
     font-size: 1rem;
     transition: 0.3s;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .intro-text button i {
@@ -64,7 +64,6 @@ button.contact-btn {
     border: 2px solid var(--color-navy-light);
     color: var(--color-white-1);
     transition: 0.3s;
-    font-weight: 300;
 }
 
 button.contact-btn:hover {
