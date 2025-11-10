@@ -60,8 +60,8 @@ textarea {
 }
 
 textarea {
-    resize: vertical;
-    min-height: 100px;
+    resize: none;
+    min-height: 120px;
 }
 
 .submit-button {
