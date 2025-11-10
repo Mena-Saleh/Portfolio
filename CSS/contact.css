@@ -54,7 +54,7 @@ textarea {
     padding: 10px;
     border: 1px solid var(--color-grey-4);
     color: var(--color-navy-grey-1);
-    border-radius: 4px;
+    border-radius: 16px;
     font-size: 1rem;
     font-family: "Open Sans", sans-serif;
 }
@@ -69,16 +69,16 @@ textarea {
     padding: 12px 60px;
     margin: 30px auto 0;
     font-size: 1rem;
-    color: white;
+    color: var(--color-white-1);
     background-color: var(--color-navy-light);
     border: 2px solid var(--color-navy-light);
-    border-radius: 50px;
+    border-radius: 36px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .submit-button:hover {
-    background-color: white;
+    background-color: transparent;
     color: var(--color-navy-light);
 }
 

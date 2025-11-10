@@ -71,7 +71,7 @@
     flex-basis: 46%;
     padding: 10px 0;
     background-color: var(--color-bg);
-    border-radius: 35px;
+    border-radius: 36px;
     height: auto;
     display: flex;
     box-shadow: 1px 1px 8px 0.5px var(--color-navy-grey-3);
@@ -116,12 +116,12 @@
 
 .about-col .splide__track {
     width: 80%;
-    border-radius: 20px;
+    border-radius: 32px;
     box-sizing: border-box;
 }
 
 .about-col .splide img {
-    width: 70%;
+    width: 60%;
     cursor: pointer;
 }
 

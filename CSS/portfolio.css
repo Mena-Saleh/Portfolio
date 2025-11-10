@@ -50,7 +50,7 @@
     background: linear-gradient(130deg,
             rgba(12, 31, 70, 0.05) 0%,
             rgba(255, 255, 255, 0.4) 100%);
-    border-radius: 5px;
+    border-radius: 36px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -140,6 +140,32 @@
     padding: 50px;
     gap: 60px 30px;
     box-sizing: border-box;
+}
+
+#project-type-filter {
+    background-color: var(--color-navy-light);
+    border: 2px solid var(--color-navy-light);
+    color: var(--color-white-1);
+    cursor: pointer;
+    transition: 0.3s;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23fff' height='10' width='10' xmlns='http://www.w3.org/2000/svg'><path d='M0 2 L5 7 L10 2'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    padding: 0 10px;
+}
+
+#project-type-filter:hover {
+    background-color: var(--color-bg);
+}
+
+#project-type-filter option {
+    background-color: var(--color-bg);
 }
 
 /* Responsiveness for mobile */
