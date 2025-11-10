@@ -24,7 +24,7 @@
 }
 
 .filter-select-container {
-    color: var(--color-navy-grey-1);
+    color: var(--color-white-1);
     font-size: 1.1rem;
     display: flex;
     align-items: center;
@@ -33,9 +33,28 @@
 
 .filter-select-container select {
     margin: 0 10px;
-    height: 35px;
-    padding: 0px 5px;
-    color: var(--color-navy-grey-2);
+    color: var(--color-white-1);
+    background-color: var(--color-navy-light);
+    border: 2px solid var(--color-navy-light);
+    cursor: pointer;
+    transition: 0.3s;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23fff' height='10' width='10' xmlns='http://www.w3.org/2000/svg'><path d='M0 2 L5 7 L10 2'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    padding: 0 25px 0 10px;
+    width: 80px;
+    height: 32px;
+}
+
+.filter-select-container option {
+    background-color: var(--color-bg);
+    color: var(--color-black);
 }
 
 .work-entry {
@@ -142,29 +161,7 @@
     box-sizing: border-box;
 }
 
-#project-type-filter {
-    background-color: var(--color-navy-light);
-    border: 2px solid var(--color-navy-light);
-    color: var(--color-white-1);
-    cursor: pointer;
-    transition: 0.3s;
 
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-
-    background-image: url("data:image/svg+xml;utf8,<svg fill='%23fff' height='10' width='10' xmlns='http://www.w3.org/2000/svg'><path d='M0 2 L5 7 L10 2'/></svg>");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 10px;
-    padding: 0 25px 0 10px;
-    width: 80px;
-}
-
-#project-type-filter option {
-    background-color: var(--color-bg);
-    color: var(--color-black);
-}
 
 /* Responsiveness for mobile */
 
@@ -189,8 +186,6 @@
 
     .filter-select-container select {
         margin: 0 10px;
-        height: 25px;
-        padding: 0px 3px;
         font-size: 0.9rem;
     }
 
@@ -238,9 +233,5 @@
                 rgba(230, 230, 230, 0.05) 100%);
         box-shadow: 1px 1px 8px 0.5px var(--color-navy-grey-5);
 
-    }
-
-    .filter-select-container select {
-        color: var(--color-grey-5);
     }
 }
