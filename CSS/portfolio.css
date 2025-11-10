@@ -157,15 +157,13 @@
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 10px;
-    padding: 0 10px;
-}
-
-#project-type-filter:hover {
-    background-color: var(--color-bg);
+    padding: 0 25px 0 10px;
+    width: 80px;
 }
 
 #project-type-filter option {
     background-color: var(--color-bg);
+    color: var(--color-black);
 }
 
 /* Responsiveness for mobile */
