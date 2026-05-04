@@ -1,5 +1,28 @@
 export const projects = [
   {
+    title: "Strategic Tic Tac Toe",
+    tags: ["Game Theory", "Next.js", "MCTS"],
+    description:
+      "A web-based implementation of the strategic tic-tac-toe game - a more complex variation of the classic - featuring a powerful AI opponent that utilizes the Monte Carlo Tree Search algorithm.",
+    siteLink: "https://strategic-tic-tac-toe-bice.vercel.app/",
+    repoLink: "https://github.com/Mena-saleh/Strategic-Tic-Tac-Toe",
+    hasSiteLink: true,
+    imgSrc: "Images/Portfolio/Strategic Tic Tac Toe.png",
+    imgAlt: "Strategic Tic Tac Toe",
+    type: "Web",
+  },
+  {
+    title: "Intelliplan",
+    tags: ["LLMs", "FastAPI", "Semantic Search"],
+    description:
+      "An AI powered staffing solution that facilitates matching skilled candidates to staffing requests by leveraging a unique hybrid approach that combines LLMs with semantic search techniques, balancing cost and performance effectively.",
+    repoLink: "https://github.com/Mena-Saleh/Intelliplan-Hackathon",
+    hasSiteLink: false,
+    imgSrc: "Images/Portfolio/Intelliplan.png",
+    imgAlt: "Intelliplan",
+    type: "AI",
+  },
+  {
     title: "TreeVis",
     tags: ["JavaScript", "Algorithms", "Visualization"],
     description:
@@ -35,18 +58,18 @@ export const projects = [
     imgAlt: "TraveLog",
     type: "Web",
   },
-  {
-    title: "ProjeX",
-    tags: [".NET Core", "Web API", "React"],
-    description:
-      "A straightforward project management system that enables users to connect together and collaborate by visualizing tasks on boards.",
-    siteLink: "",
-    repoLink: "https://github.com/Mena-saleh/ProjeX-Web-App",
-    hasSiteLink: false,
-    imgSrc: "Images/Portfolio/ProjeX.png",
-    imgAlt: "ProjeX",
-    type: "Web",
-  },
+  // {
+  //   title: "ProjeX",
+  //   tags: [".NET Core", "Web API", "React"],
+  //   description:
+  //     "A straightforward project management system that enables users to connect together and collaborate by visualizing tasks on boards.",
+  //   siteLink: "",
+  //   repoLink: "https://github.com/Mena-saleh/ProjeX-Web-App",
+  //   hasSiteLink: false,
+  //   imgSrc: "Images/Portfolio/ProjeX.png",
+  //   imgAlt: "ProjeX",
+  //   type: "Web",
+  // },
   {
     title: "Deception Detection",
     tags: ["AI", "Data Fusion", "Django", "React"],
